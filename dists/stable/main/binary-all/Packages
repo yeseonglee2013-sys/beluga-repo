@@ -1,0 +1,18 @@
+Package: beluga-os
+Architecture: all
+Version: 9.0.0
+Priority: optional
+Section: misc
+Maintainer: Beluga OS <yeseonglee2013@gmail.com>
+Depends: plymouth, flatpak, initramfs-tools
+Recommends: pipewire-bin
+Filename: pool/main/beluga-os_9.0.0_all.deb
+Size: 4338548
+MD5sum: 595afb76bda54734ab4367f7276ad4de
+SHA1: 9b3f62873123a467bc365309af3e12958d5354be
+SHA256: 6569441a716cb0233126222de7c627b1c696795fc4ae99a7c80e23f6e30d553b
+SHA512: c7c702d8b7ea81d1e170211e1c1ca2938a41dde09f0b461e0ea3aba8f6ebcfb5f53474b3e121b7cfd7de02317916798f5d1bd5e42e230b33a465792f4fba18bf
+Description: Beluga OS branding, settings and update channel
+ Beluga boot logo, wallpaper, startup sound, Korean defaults,
+ Roblox / Roblox Studio names, installer branding and the Beluga update repository.
+

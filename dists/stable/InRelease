@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: all amd64
+Codename: stable
+Components: main
+Date: Thu, 08 Oct 2026 23:56:31 +0000
+Label: Beluga OS
+Origin: Beluga OS
+Suite: stable
+MD5Sum:
+ 5dd065fd8d7440a8558e9629ceab5491              146 Release
+ 7d0e0c1633cbbca80333736aa2bf4761              767 main/binary-all/Packages
+ 6ef0d7910fe7ef8acfda520bbe3d9dd5              543 main/binary-all/Packages.gz
+ 7d0e0c1633cbbca80333736aa2bf4761              767 main/binary-amd64/Packages
+ 6ef0d7910fe7ef8acfda520bbe3d9dd5              543 main/binary-amd64/Packages.gz
+SHA1:
+ 1510ccbd6283a31ec84685870d2e5cdd70e00e0f              146 Release
+ 68ca0ea61fd094a5d77f5208b0dc7449b833be17              767 main/binary-all/Packages
+ 78558174580658e1949654a959327ea12ec55073              543 main/binary-all/Packages.gz
+ 68ca0ea61fd094a5d77f5208b0dc7449b833be17              767 main/binary-amd64/Packages
+ 78558174580658e1949654a959327ea12ec55073              543 main/binary-amd64/Packages.gz
+SHA256:
+ 7aad91018b510235c9aef43a9c98eb2567be8d86940edb738a5b36828aacd058              146 Release
+ 94da8b1a2316259c3d3b47d6364a700a88404d2962bb75bcc4432b722efa1b18              767 main/binary-all/Packages
+ 88db56e1c12014864f846730741d432fd2f13292c067bbfa24f48da47d83c281              543 main/binary-all/Packages.gz
+ 94da8b1a2316259c3d3b47d6364a700a88404d2962bb75bcc4432b722efa1b18              767 main/binary-amd64/Packages
+ 88db56e1c12014864f846730741d432fd2f13292c067bbfa24f48da47d83c281              543 main/binary-amd64/Packages.gz
+SHA512:
+ 4ad3c652a96b57e26bc78a309b417095b244c3087f7d784f69b04b0cf7b75f4a098b9d92c5161b4eadf0b5041ad0a4393e26dbe339dc1ed339fc7d9ac784714f              146 Release
+ 714b9c8ce9393935703aa8d2b5f9f5accad6042ee7edccc8e7a765a2cde7f194a6e095edaddfb5cf10f9353d6049e4ef0c3c65e4a5fa30985269c54a90f20008              767 main/binary-all/Packages
+ f997dbbae549c76f89ad31efb54ab2dd8fea7c8e4868e9f7e8f564d235f03468f6b2eb89d537405edcbb2b4d3ba19492879298a6710827a7c07385c103c8b642              543 main/binary-all/Packages.gz
+ 714b9c8ce9393935703aa8d2b5f9f5accad6042ee7edccc8e7a765a2cde7f194a6e095edaddfb5cf10f9353d6049e4ef0c3c65e4a5fa30985269c54a90f20008              767 main/binary-amd64/Packages
+ f997dbbae549c76f89ad31efb54ab2dd8fea7c8e4868e9f7e8f564d235f03468f6b2eb89d537405edcbb2b4d3ba19492879298a6710827a7c07385c103c8b642              543 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRj18CJtY+5gRsD6xGTpP4a5LlexAUCasgtrwAKCRCTpP4a5Lle
+xO48AP9mFbJlpWNfzupyp/LvqxXB8KKjsrYg+DclCeHY94IPPgD+P05KxhlsRLaP
+17RNz0J5UV7l+MyBb4osEmgP+7+0rAI=
+=Ih4i
+-----END PGP SIGNATURE-----
