@@ -1,5 +1,0 @@
-# Beluga OS 업데이트 전달 규칙
-# Beluga 컴퓨터들은 Debian 업데이트를 이 서버의 /debian/ 으로 요청함 → 우리가 정한 날짜의 Debian으로 전달
-# ★ 새 업데이트를 풀 때: 아래 두 줄의 날짜만 바꾸고 올리면 모든 Beluga가 그 날짜까지 업데이트됨
-/debian/*            https://snapshot.debian.org/archive/debian/20261014T000000Z/:splat           302
-/debian-security/*   https://snapshot.debian.org/archive/debian-security/20261014T000000Z/:splat  302
