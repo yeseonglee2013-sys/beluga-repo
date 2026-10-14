@@ -1,0 +1,4 @@
+# Beluga OS 업데이트 서버 (Netlify): 이 저장소 파일을 그대로 올림 (빌드 없음)
+[build]
+  publish = "."
+  command = ""
