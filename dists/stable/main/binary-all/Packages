@@ -1,17 +1,17 @@
 Package: beluga-os
 Architecture: all
-Version: 9.1.6
+Version: 9.1.8
 Priority: optional
 Section: misc
 Maintainer: Beluga OS <yeseonglee2013@gmail.com>
 Depends: plymouth, flatpak, initramfs-tools
 Recommends: pipewire-bin
-Filename: pool/main/beluga-os_9.1.6_all.deb
-Size: 11353516
-MD5sum: c6c04fc581c5835b17c691b8a2a4bc69
-SHA1: 2b95346ff12c7949be2b943ff448080128c0f463
-SHA256: e3be02937929225b7f84e9dfcf319d7a13749b3f30195d1546f19bccbf7674c6
-SHA512: 3ab601f2791e9e09fb843490ef0d1d607200f866646cc2f123d42b1a8c91cdd4fdf0503729a44d14b14b7d22266a63920ebe17136a7f1ca4a09959952db40fa6
+Filename: pool/main/beluga-os_9.1.8_all.deb
+Size: 11364900
+MD5sum: 56b0ba365f582b7ca72c0d6583513710
+SHA1: 0059d7de112cc9101d291a062e2bb4a5df14f15f
+SHA256: adf542d90bce27fb6befd0c90669bfba470ab8389a337df90754439fc9098c5b
+SHA512: a623265e223421a89b515c5f1f71c79b398c646071a140c6130f64e8503a4974abea86b0191b044da43b3bc75ef4a6999757bf00c274cacb05d92d5f216d215f
 Description: Beluga OS branding, settings and update channel
  Beluga boot logo, wallpaper, startup sound, Korean defaults,
  Roblox / Roblox Studio names, installer branding and the Beluga update repository.
