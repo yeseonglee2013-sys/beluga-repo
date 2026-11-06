@@ -1,18 +1,1790 @@
+Package: base-files
+Architecture: amd64
+Version: 13.8+deb13u7+beluga1
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 500
+Provides: base, usr-is-merged
+Pre-Depends: awk
+Breaks: debian-security-support (<< 2019.04.25), initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
+Replaces: base, dpkg (<= 1.15.0), miscutils
+Filename: pool/main/base-files_13.8+deb13u7+beluga1_amd64.deb
+Size: 88352
+MD5sum: 397fa145055d24e6486930fac31e5941
+SHA1: 84b721b536776980acdae2a706e7dc938cb8abc1
+SHA256: e3c8676f56a2a951854a9cc86ac6bf90557e17d4900c23fa295073aea8bfe1a5
+SHA512: 390552e7019f866861e36b4ebdf8defbf847072796c2ebb49f91b1cbe2ae60a31ad805c5bc8cb31c728ec121c5497d9fd5e50c018e7141c133ea666777edd130
+Description: Debian base system miscellaneous files
+ This package contains the basic filesystem hierarchy of a Debian system, and
+ several important miscellaneous files, such as /etc/debian_version,
+ /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,
+ and the text of several common licenses in use on Debian systems.
+
+Package: beluga-desktop
+Architecture: amd64
+Version: 1.0.1
+Priority: optional
+Section: x11
+Maintainer: Beluga OS <yeseonglee2013@gmail.com>
+Installed-Size: 1209
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), liblayershellqtinterface6 (>= 6.1.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libstdc++6 (>= 14), qml6-module-qtquick, qml6-module-qtquick-window, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtquick-effects, qml6-module-qtquick-particles, qml6-module-qtmultimedia, qml6-module-qtqml-workerscript, wireplumber, xdg-utils
+Breaks: beluga-os (<< 9.2.4)
+Replaces: beluga-os (<< 9.2.4)
+Filename: pool/main/beluga-desktop_1.0.1_amd64.deb
+Size: 279348
+MD5sum: 7c9126733d55afc400aff71d0f0ab13b
+SHA1: a660704d829ed44dadcd7b392f4f867e7ca37b60
+SHA256: fd15c5d0d973c9ea2e466d6183015ceb0ba4418a2b5e3635bd8ff7fd789e28f1
+SHA512: 80badbf9a9ee8e3a7fd112bb8df8481b27df5107a843da735097e39f599e6670f07b9533297e368c4e64d9e12bac47aea7575c7e987b75928f852c847c57af8d
+Description: Beluga OS desktop shell (top bar, dock, desktop, notifications)
+ Beluga's own desktop shell replacing plasmashell: desktop with live wallpaper,
+ top bar with tray/network/volume/battery/clock, dock, notifications and the
+ Beluga wheel, search, process killer and update cards.
+
 Package: beluga-os
 Architecture: all
-Version: 9.1.9
+Version: 9.2.4
 Priority: optional
 Section: misc
 Maintainer: Beluga OS <yeseonglee2013@gmail.com>
-Depends: plymouth, flatpak, initramfs-tools
+Depends: plymouth (>= 24.004.60-5+beluga1), kwin-style-breeze (>= 4:6.3.5-1+beluga1), breeze (>= 4:6.3.5-1+beluga1), libkf6xmlgui6 (>= 6.13.0-1+beluga1), plasma-workspace (>= 4:6.3.6-2+beluga1), plasma-workspace-data (>= 4:6.3.6-2+beluga1), plasma-desktop-data (>= 4:6.3.6-1+beluga1), desktop-base (>= 13.0.4+beluga1), base-files (>= 13.8+deb13u7+beluga1), im-config (>= 0.57-2+beluga1), sddm (>= 0.21.0+git20250502.4fe234b-2+beluga1), plasma-discover (>= 6.3.6-1+beluga1), dolphin (>= 4:25.04.3-1+deb13u1+beluga1), beluga-desktop (>= 1.0.0), flatpak, initramfs-tools, kwin-common (>= 4:6.3.6-1+beluga1), kwin-wayland (>= 4:6.3.6-1+beluga1), mpv, avahi-utils, librsvg2-bin, python3-psutil, python3-aiohttp, python3-pyside6.qtquick, python3-pyside6.qtnetwork, python3-pyside6.qtqml, python3-pyside6.qtgui, qml6-module-qtquick-controls, qml6-module-qtquick-window, qml6-module-qtquick-layouts, qml6-module-qtquick-dialogs, qml6-module-qtmultimedia, qml6-module-qtquick-particles, qml6-module-qtquick-effects, dialog, alsa-utils
 Recommends: pipewire-bin
-Filename: pool/main/beluga-os_9.1.9_all.deb
-Size: 11362128
-MD5sum: c5d7a1700c3adf91adb6314e2f4da034
-SHA1: 00e1c9de8181b6952b14f4c0111d33dff5f0e77c
-SHA256: 148ad5a028100005052301031437669924f7fc78658636d097fb213f7356e410
-SHA512: 60f3c5693c237420ba2a7f8a5875a3aa8a498df9e0a4bbf67869680d801f543a8e415c4cdbef30d706debaf2d8f314fd7bb23bc2161c8415e77f13f1fac10a6b
+Filename: pool/main/beluga-os_9.2.4_all.deb
+Size: 31737968
+MD5sum: f9b93e1a2c6c5b33006779cedc190ab5
+SHA1: f4984fa06ec6421d61084e2efa83d4051240dc87
+SHA256: 5f17543f7ff15543a27e826430a99d2eea46c8288a445f7ecf6913a16c530308
+SHA512: e39cbb285c0a36d36057259ad7fdc5245f96fb1f892c42099de9d43818cca9a6bb1bbf13f48aea057c9ee501113314a0e21cf20b982169e147655cadf92d61cc
 Description: Beluga OS branding, settings and update channel
  Beluga boot logo, wallpaper, startup sound, Korean defaults,
- Roblox / Roblox Studio names, installer branding and the Beluga update repository.
+ developer defaults, installer branding and the Beluga update repository.
+
+Package: breeze-cursor-theme
+Architecture: all
+Version: 4:6.3.5-1+beluga1
+Multi-Arch: foreign
+Priority: optional
+Section: kde
+Source: breeze
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 30548
+Filename: pool/main/breeze-cursor-theme_6.3.5-1+beluga1_all.deb
+Size: 1208592
+MD5sum: b2beefbb9ee971908967608cf63c6be4
+SHA1: 0da7d2722aed720a9f6bc29c4291101b997f8af8
+SHA256: 7f99234242bb15ea6a49692103e3f90bb84f57a5156d6d7b123e3bcc6979efd6
+SHA512: 7b030aa70b369b17ce8638a35e08f724778373a55c88a2f075de5f80c29c2ea808e172ca636169d21bf312a902da7d62dfbe93634f1662df6f9f1cd7db488a0d
+Homepage: https://invent.kde.org/?p=breeze.git/breeze
+Description: Default Plasma cursor theme
+ This is the default cursor theme for the KDE Plasma 6 desktop.
+ .
+ This package is part of the Breeze theme module.
+
+Package: breeze-dev
+Architecture: amd64
+Version: 4:6.3.5-1+beluga1
+Priority: optional
+Section: kde
+Source: breeze
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 29
+Filename: pool/main/breeze-dev_6.3.5-1+beluga1_amd64.deb
+Size: 9476
+MD5sum: d9bca5bb1498b37e6eafc7a694908f96
+SHA1: d75b27fd77308319e7f60593549fc6e5a7c56d22
+SHA256: 8679c451393d34f1ff99fcbd5021413f42b4869d6b315639fe739a429b23911f
+SHA512: 7ebb2d817a9d1bbfe62c5455f509932ae5f735b21f077ee4c4e63e9c58f416dadbed974a767ac77e34ba2ca6a1dcfe7b5c2b03c4534cbaa60160ddcc9a187588
+Homepage: https://invent.kde.org/?p=breeze.git/breeze
+Description: Default Plasma theme (development files)
+ This is the default theme for the KDE Plasma desktop.
+ .
+ This package includes development files.
+ .
+ This package is part of the KDE base workspace module.
+
+Package: breeze-wallpaper
+Architecture: all
+Version: 4:6.3.5-1+beluga1
+Multi-Arch: foreign
+Priority: optional
+Section: kde
+Source: breeze
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 42210
+Breaks: breeze (<< 4:6.1.4-2~)
+Replaces: breeze (<< 4:6.1.4-2~)
+Filename: pool/main/breeze-wallpaper_6.3.5-1+beluga1_all.deb
+Size: 43211452
+MD5sum: aad605bd0f69a0278762b2c15b4bbfad
+SHA1: 245e059d22a2dd8e2c2fa8f6dcabf30261ed4810
+SHA256: b9ecabf10a5a79bd325e6f5a75538349ff5fcd5b3a0ef31861db7bb2ac3bc3c4
+SHA512: b609c6d9a90d3da03e4ba3ec0a1f4948a507fea172e707edfff56f4b60362c2e552033d076df4d416e7dd07927c64de53fad90e4d0a8eb9332cbd63aee8d6ba4
+Homepage: https://invent.kde.org/?p=breeze.git/breeze
+Description: Default Plasma wallpaper
+ This is the default wallpaper for the KDE Plasma 6 desktop.
+ .
+ This package is part of the Breeze theme module.
+
+Package: breeze
+Architecture: amd64
+Version: 4:6.3.5-1+beluga1
+Priority: optional
+Section: kde
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 104
+Depends: breeze-cursor-theme (= 4:6.3.5-1+beluga1), breeze-icon-theme, breeze-wallpaper (= 4:6.3.5-1+beluga1), kde-style-breeze (= 4:6.3.5-1+beluga1), kwin-style-breeze (= 4:6.3.5-1+beluga1), libc6 (>= 2.34), libkf6coreaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6kcmutils6 (>= 6.10.0~), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.7.0~), libqt6svg6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 5)
+Recommends: kde-style-breeze-qt5 (= 4:6.3.5-1+beluga1)
+Filename: pool/main/breeze_6.3.5-1+beluga1_amd64.deb
+Size: 32888
+MD5sum: f69da3e0b239d3ea4cf09abefe3e88ba
+SHA1: cf665ee13143f4fa0224bc40c8412bd044f65209
+SHA256: 231764a43e7ec20034ebbb0bf2087036297bbbdac8188dbce1815852ec3ed9ae
+SHA512: 141093f6796d67af4e4fa18d3941777ee009a17d633f8b02eda72ad0ff68e3c207dfbbcdce578bead6547823ec8cc179c074de65ccf1d9893ceedc1b0875c0cf
+Homepage: https://invent.kde.org/?p=breeze.git/breeze
+Description: Default Plasma theme (Metapackage)
+ This is the default theme for the KDE Plasma desktop.
+ .
+ This package includes wallpapers, icons, cursors, KWin style and Qt
+ widget style for the Plasma 6 desktop.
+ .
+ This package is part of the KDE base workspace module.
+
+Package: calamares-settings-debian
+Architecture: all
+Version: 13.0.13-1+beluga1
+Priority: optional
+Section: utils
+Maintainer: Jonathan Carter <jcc@debian.org>
+Installed-Size: 225
+Provides: calamares-settings
+Depends: calamares, rsync, cryptsetup, libglib2.0-bin, keyutils, pkexec, qml-module-qtquick-window2, qml-module-qtquick2, dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/calamares-settings-debian_13.0.13-1+beluga1_all.deb
+Size: 130008
+MD5sum: e75e755e47750c324038745a4197eec6
+SHA1: f62cbe0e6fde116713c325b4cad4dd3bde161706
+SHA256: c7e39758c82bfe1a2392af3bcbe9f6eb1c692c393612b7a0c9ce8a905f17d4b5
+SHA512: 35408dff7756e5b83a76a32a31703a2eae68f37c3f4ce54561b197dfd15b655e6442fdc42d644476e76509fc52e7407a999b5f1f2818cdd85312ebeec4eb7426
+Homepage: https://salsa.debian.org/live-team/calamares-settings-debian
+Description: Debian theme and settings for the Calamares Installer
+ Calamares is a generic installer framework for Linux distributions.
+ By default, it contains a set of boilerplate wording and images. This
+ package provides the latest Debian artwork as well as scripts that
+ supports EFI installations.
+ .
+ It also serves as an example for how derivatives can create their own
+ calamares-settings packages.
+
+Package: calamares
+Architecture: amd64
+Version: 3.3.14-1+beluga1
+Priority: optional
+Section: utils
+Maintainer: Jonathan Carter <jcc@debian.org>
+Installed-Size: 11080
+Depends: os-prober, libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libkf6coreaddons6 (>= 6.0.0), libkf6crash6 (>= 6.0.0), libkf6parts6 (>= 6.0.0), libkpmcore12 (>= 24.05.2), libparted2t64 (>= 3.1), libpwquality1 (>= 1.1.0), libpython3.13 (>= 3.13.0~rc3), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.4.0), libqt6gui6 (>= 6.8.2), libqt6network6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickwidgets6 (>= 6.6.0), libqt6svg6 (>= 6.6.0), libqt6widgets6 (>= 6.7.2), libqt6xml6 (>= 6.6.0), libstdc++6 (>= 14), libyaml-cpp0.8 (>= 0.8.0+dfsg-7)
+Recommends: btrfs-progs, squashfs-tools
+Breaks: calamares-extensions (<< 3.3.12-1)
+Replaces: calamares-extensions (<< 3.3.12-1)
+Filename: pool/main/calamares_3.3.14-1+beluga1_amd64.deb
+Size: 4235932
+MD5sum: cd7c0d96924ec6797d92062bae526132
+SHA1: e34fe48a81b02331a3e9f4c0030761184044e063
+SHA256: fc6e26db92411f04b8292f6d2bdccf39cc3272e411ee6e59afceb220eed847ca
+SHA512: c56aee1034986e66fd4fbb4f82efe9deb52d1ad17fb3e52863921139cca41fea98880794786ad883f2cc21ef34c51c879a184d7bb62defff2efd998688f67a29
+Homepage: https://github.com/calamares/calamares
+Description: distribution-independent installer framework
+ Calamares is a distribution-independent installer framework.
+ .
+ It provides a graphical installer that can be used with nearly
+ any distribution. This package is suitable for live media on
+ Debian-based systems, and won't be of any particular use on
+ an already installed system.
+ .
+ You will likely want to provide your own config files to match
+ your distribution, reading the Calamares documentation will guide
+ you through that process.
+
+Package: desktop-base
+Architecture: all
+Version: 13.0.4+beluga1
+Priority: optional
+Section: x11
+Maintainer: Debian Desktop Team <debian-desktop@lists.debian.org>
+Installed-Size: 21879
+Depends: librsvg2-common, fonts-quicksand
+Recommends: plymouth-label
+Suggests: gnome | kde-standard | xfce4 | wmaker
+Filename: pool/main/desktop-base_13.0.4+beluga1_all.deb
+Size: 9965824
+MD5sum: 45ef136f05c156e80648f08f72b7eaa6
+SHA1: d877eed8a91ce18b060bf92da4b57b72e26014a7
+SHA256: 482d5d4c1877451a085efc1b959eb171d7111143c87b3ea1de5a787565059cce
+SHA512: 788bb40926880920ed67531a1e557e928c5f489621c158a6fd67a88dc8b9fe61b1dedac81a1f02703098c8029fe2d957fc32fe76f0628e0d43069f7a406bd4ba
+Homepage: https://www.debian.org/devel/debian-desktop/
+Description: common files for the Debian Desktop
+ This package contains various miscellaneous files which are used by
+ Debian Desktop installations.  Currently, it provides some
+ Debian-related artwork and themes, .desktop files containing links to
+ Debian related material (suitable for placement on a user's desktop),
+ and other common files between the available desktop environments
+ such as GNOME and KDE.
+
+Package: dolphin-data
+Architecture: all
+Version: 4:25.04.3-1+deb13u1+beluga1
+Priority: optional
+Section: utils
+Source: dolphin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 7134
+Breaks: dolphin (<< 4:24.05.2-1~)
+Replaces: dolphin (<< 4:24.05.2-1~)
+Filename: pool/main/dolphin-data_25.04.3-1+deb13u1+beluga1_all.deb
+Size: 873364
+MD5sum: e1ea26aaadd8ad522a05c112d691d53f
+SHA1: a034b1245379777c721a419dfe4d04bee09bb44c
+SHA256: 443c3097e51ed12ab79398602949e19cae9abe8a9bb91b0d011fb0a79d213d7b
+SHA512: 61252647a11e5aca72033320466f28a0f1ee36743ed1e1e848110b8f2b74dace682cbcd74a585b4af6cabc778786faa1d1476d3019f18aabee783e753f7482bd
+Homepage: https://apps.kde.org/dolphin/
+Description: file manager - data
+ Dolphin is KDE's file manager that lets you navigate and browse the contents
+ of your hard drives, USB sticks, SD cards, and more. Creating, moving, or
+ deleting files and folders is simple and fast.
+ .
+ This package contains architecture-independent data files.
+
+Package: dolphin-dev
+Architecture: amd64
+Version: 4:25.04.3-1+deb13u1+beluga1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: dolphin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 29
+Filename: pool/main/dolphin-dev_25.04.3-1+deb13u1+beluga1_amd64.deb
+Size: 10216
+MD5sum: 24ad6e8926416d8d521f467ebe0dee00
+SHA1: 774f34c6bea11950ff44fdd2e120735d8d301772
+SHA256: e401b5aa3684c8ea991dfc00b598b259e671883f6b545d72beff82303cf93a16
+SHA512: e806cc112c8972e624df5a95edcee5b61574ac5db651c4d3f808df97663dfc8561dd5a178bbebe132c44d32d87581655df66abc76605d005d3a8e2f5108f9f66
+Homepage: https://apps.kde.org/dolphin/
+Description: file manager - development files
+ Contains DBus interface XML files to access dolphin via the DBus
+ org.freedesktop.FileManager1 interface.
+
+Package: dolphin-doc
+Architecture: all
+Version: 4:25.04.3-1+deb13u1+beluga1
+Priority: optional
+Section: doc
+Source: dolphin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 4556
+Breaks: dolphin (<< 4:24.05.2-1~)
+Replaces: dolphin (<< 4:24.05.2-1~)
+Filename: pool/main/dolphin-doc_25.04.3-1+deb13u1+beluga1_all.deb
+Size: 2972828
+MD5sum: ec8d39bf2cc84ae0dba775f93973280f
+SHA1: f05e0acf898d980f742f041f8723e4ccd095a4e4
+SHA256: 16b5142699bf38368ebcdd32898abc8777ecbba0e1c7c8f3053df4d3cb448d21
+SHA512: 670c0bb6cd8b6ced144d4cbcc8b511f48c0a3e137e5c952f37c1d9668b07ff8bb7c25e1ce9a8070ad7947d3c4129bf6c0496b4415556403abe5ee24668b96905
+Homepage: https://apps.kde.org/dolphin/
+Description: file manager - documentation
+ Dolphin is KDE's file manager that lets you navigate and browse the contents
+ of your hard drives, USB sticks, SD cards, and more. Creating, moving, or
+ deleting files and folders is simple and fast.
+ .
+ This package contains the HTML documentation.
+
+Package: dolphin
+Architecture: amd64
+Version: 4:25.04.3-1+deb13u1+beluga1
+Priority: optional
+Section: utils
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 4004
+Depends: baloo6, dolphin-data (= 4:25.04.3-1+deb13u1+beluga1), kio6, libc6 (>= 2.34), libdolphinvcs6 (= 4:25.04.3-1+deb13u1+beluga1), libkf6baloo6 (>= 6.9.0~), libkf6baloowidgets6 (>= 4:25.03.90~), libkf6bookmarks6 (>= 6.9.0~), libkf6bookmarkswidgets6 (>= 6.9.0~), libkf6codecs6 (>= 6.9.0~), libkf6colorscheme6 (>= 6.0.0), libkf6completion6 (>= 6.9.0~), libkf6configcore6 (>= 6.9.0~), libkf6configgui6 (>= 6.9.0~), libkf6configwidgets6 (>= 6.10.0), libkf6coreaddons6 (>= 6.9.0~), libkf6crash6 (>= 6.9.0~), libkf6dbusaddons6 (>= 6.9.0~), libkf6filemetadata3 (>= 6.9.0~), libkf6guiaddons6 (>= 6.9.0~), libkf6i18n6 (>= 6.9.0~), libkf6iconthemes6 (>= 6.9.0~), libkf6jobwidgets6 (>= 6.0.0), libkf6kcmutils6 (>= 6.9.0~), libkf6kcmutilscore6 (>= 6.9.0~), libkf6kiocore6 (>= 6.9.0~), libkf6kiofilewidgets6 (>= 6.13.0), libkf6kiogui6 (>= 6.9.0~), libkf6kiowidgets6 (>= 6.9.0~), libkf6newstuffwidgets6 (>= 6.9.0~), libkf6notifications6 (>= 6.9.0~), libkf6parts6 (>= 6.9.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libkf6solid6 (>= 6.9.0~), libkf6textwidgets6 (>= 6.9.0~), libkf6userfeedbackcore6 (>= 6.9.0~), libkf6userfeedbackwidgets6 (>= 6.9.0~), libkf6widgetsaddons6 (>= 6.9.0~), libkf6windowsystem6 (>= 6.9.0~), libkf6xmlgui6 (>= 6.0.0), libpackagekitqt6-1 (>= 1.1.1), libphonon4qt6-4t64 (>= 4:4.12.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.4.0), libqt6gui6 (>= 6.8.2), libqt6widgets6 (>= 6.4.0~), libqt6xml6 (>= 6.4.0~), libstdc++6 (>= 13.1), phonon4qt6, qt6-base-private-abi (= 6.8.2)
+Recommends: dolphin-doc (>= 4:24.05.2~), dolphin-plugins, ffmpegthumbs, kdegraphics-thumbnailers, kdenetwork-filesharing, kimageformat6-plugins, kio-extras (>= 4:24.12.2~), qt6-image-formats-plugins
+Suggests: kio-admin
+Breaks: dolphin-data (<< 4:24.12.2-2~), dolphin-plugins (<< 4:24.05~)
+Replaces: dolphin-data (<< 4:24.12.2-2~)
+Filename: pool/main/dolphin_25.04.3-1+deb13u1+beluga1_amd64.deb
+Size: 940724
+MD5sum: a5b0fcb032b3d81dff8bcccecdc7a463
+SHA1: f8d3ebbec3451397a966188050b92762c01c1ff6
+SHA256: 32b1275e5e6ecc0fc1ed7f55ebdf3b8261292c56c78a4453f2173a846f324c27
+SHA512: ab90cd9e9f99f69d7e4b6ca5605f97a97e3f877ed7e94ad6bc90e292338a7440746dcc154b8f94b9249cf06499bafc342de6ebe289548051c6064bcec3798d07
+Homepage: https://apps.kde.org/dolphin/
+Description: file manager
+ Dolphin is KDE's file manager that lets you navigate and browse the contents
+ of your hard drives, USB sticks, SD cards, and more. Creating, moving, or
+ deleting files and folders is simple and fast.
+ .
+ Features include:
+   Customisable sidebars
+   "Breadcrumb" navigation
+   View properties remembered for each folder
+   Split views
+   Integrated terminal
+   Network transparency
+   Undo/redo functionality
+   Ratings, comments, and tags
+
+Package: im-config
+Architecture: all
+Version: 0.57-2+beluga1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 400
+Provides: im-switch
+Depends: gettext-base
+Recommends: x11-common, zenity | kdialog | kde-baseapps-bin (<< 4:16.08.3-2~) | whiptail
+Conflicts: im-switch
+Filename: pool/main/im-config_0.57-2+beluga1_all.deb
+Size: 57608
+MD5sum: b5619e09d31457fcbd78266b6edac561
+SHA1: c65e9696b74040ee23001db0eaa695720ab4a52e
+SHA256: 6a1208bbdfa62b2151e4d06c8113b6ebbd45168fda1a7d01bface25e53f2a398
+SHA512: 6e6400af4e272fc0bd5a888748b7824f7dc983c4c5e5b6b300ae8a998a04a6dfa3350cb60ab091f21b1c53bc888696350c12d6f6e32f7e427653f953a4b469dd
+Homepage: https://salsa.debian.org/input-method-team/im-config
+Description: Input method configuration framework
+ im-config package provides the framework to configure and to switch
+ the input method. This input method is the essential mechanism for
+ Japanese, Chinese and Korean (CJK) languages to enter their non-ASCII
+ native characters.
+ .
+ Many modern input methods such as IBus support not only one of these CJK
+ languages but support almost all languages simultaneously by
+ dynamically switching keyboard modes with GUI helper program.
+ .
+ By installing this package, the most desirable input method and its
+ backend conversion engine are automatically configured with both the X
+ Window System Input Method (XIM), GTK input method module, Qt input
+ method module, and clutter input method module.
+ .
+ You can further customize your input method with 'im-config' command.
+
+Package: kde-config-updates
+Architecture: amd64
+Version: 6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: plasma-discover
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 102
+Depends: systemsettings, libc6 (>= 2.4), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6kcmutilscore6 (>= 6.10.0~), libkf6kcmutilsquick6 (>= 6.10.0~), libqt6core6t64 (>= 6.8.2), libqt6qml6 (>= 6.7.0~), libstdc++6 (>= 5)
+Filename: pool/main/kde-config-updates_6.3.6-1+beluga1_amd64.deb
+Size: 27056
+MD5sum: ff93592d4178bb9a208ba59450d739cf
+SHA1: 9ba0199a72a412024b067ce321d5c912e72968d4
+SHA256: 21d7f89766a7ad6de28557c470267596a46d51935a0d512751a81ddecccf249c
+SHA512: dad0fcbe4c2f1c50cd00d73a219dde2b7a9f286cd73a72a2112bdceb34d6d5cdf81fe9642acafd2a44120ebbc6bd7d967f15f1f3d1e2f9bebad0a11bf5918f6d
+Homepage: https://invent.kde.org/plasma/discover
+Description: Unattended updates configuration
+ This package contains a configuration module for configuring
+ unattended updates for fleet administrators without the need to
+ use system updaters manually.
+ .
+ This package is part of Plasma Discover.
+
+Package: kde-style-breeze-data
+Architecture: all
+Version: 4:6.3.5-1+beluga1
+Priority: optional
+Section: kde
+Source: breeze
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 336
+Breaks: kde-style-breeze (<< 4:6.2.4-2~)
+Replaces: kde-style-breeze (<< 4:6.2.4-2~)
+Filename: pool/main/kde-style-breeze-data_6.3.5-1+beluga1_all.deb
+Size: 43468
+MD5sum: 732be3d14289cb2b862ad6472063a00a
+SHA1: 5d9d295b0ed680c461e9b303db5d00adba7d8b2b
+SHA256: ac5d58212a755b1b31fae7f6c7754d810cbc300b0849b1380f64bfba7591b80b
+SHA512: 8e162a60cb27715c2fb225287e9b124e1451dc72fff9ea785488d959a66ded999d367fac9dbadf7f78412b6a221d1aaab65e9896679aaa08c6f7d924a269e59c
+Homepage: https://invent.kde.org/?p=breeze.git/breeze
+Description: Widget style for Qt and KDE Software - data files
+ This is the default widget style for KDE's Plasma desktop.
+ .
+ This package containts the architecture-independent data files used by both
+ the Qt6 and Qt5 versions of the Breeze theme module.
+ .
+ This package is part of the Breeze theme module.
+
+Package: kde-style-breeze-qt5
+Architecture: amd64
+Version: 4:6.3.5-1+beluga1
+Priority: optional
+Section: kde
+Source: breeze
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 629
+Depends: kde-style-breeze-data (= 4:6.3.5-1+beluga1), libc6 (>= 2.32), libkf5configcore5 (>= 5.102.0~), libkf5configgui5 (>= 5.102.0~), libkf5configwidgets5 (>= 5.102.0~), libkf5guiaddons5 (>= 5.102.0~), libkf5iconthemes5 (>= 5.102.0~), libkf5kirigami2-5 (>= 5.102.0~), libkf5style5 (>= 5.102.0~), libkf5windowsystem5 (>= 5.102.0~), libqt5core5t64 (>= 5.15.2~), libqt5dbus5t64 (>= 5.15.2~), libqt5gui5t64 (>= 5.15.2~) | libqt5gui5-gles (>= 5.15.2~), libqt5quick5 (>= 5.15.2~) | libqt5quick5-gles (>= 5.15.2~), libqt5widgets5t64 (>= 5.15.2~), libstdc++6 (>= 5)
+Recommends: libkf6kcmutils-bin
+Breaks: kde-style-breeze (<< 4:6.2.4-2~)
+Replaces: kde-style-breeze (<< 4:6.2.4-2~)
+Filename: pool/main/kde-style-breeze-qt5_6.3.5-1+beluga1_amd64.deb
+Size: 190568
+MD5sum: b08e6bdb101b5f225421a7ff782e404f
+SHA1: 79fbd3f89bdcbc7b903124274107b11afc07ec1a
+SHA256: 3089b7b0e111df4ec65f4960407f03098385bcd09a33509076e73eb091a5953a
+SHA512: 1df4dfeaf55fd1ff1baea94eb11854fb148a1217e08d9db585e8163eaa5fc9b9211949b73bf17de21e9bbd37357118317d878c9c99fcfe4b97b8edff737dcbb2
+Homepage: https://invent.kde.org/?p=breeze.git/breeze
+Description: Widget style for Qt and KDE Software running Qt5
+ This is the default widget style for KDE's Plasma desktop for apps still
+ depending on Qt5 and KDE Frameworks 5.
+ .
+ This package is part of the Breeze theme module.
+
+Package: kde-style-breeze
+Architecture: amd64
+Version: 4:6.3.5-1+beluga1
+Priority: optional
+Section: kde
+Source: breeze
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 694
+Depends: kde-style-breeze-data (= 4:6.3.5-1+beluga1), libc6 (>= 2.32), libkf6colorscheme6 (>= 6.10.0~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6guiaddons6 (>= 6.10.0~), libkf6iconthemes6 (>= 6.10.0~), libkf6style6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkirigamiplatform6 (>= 6.10.0~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.8.2), libqt6quick6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 5)
+Recommends: libkf6kcmutils-bin
+Filename: pool/main/kde-style-breeze_6.3.5-1+beluga1_amd64.deb
+Size: 209996
+MD5sum: f8a069a7ec71939e6474cf14829c703d
+SHA1: cb83e598f9f4cc25d5405ed0cdacb146315aeb6a
+SHA256: 28b2a1f1b588711faf20f6419c613901ab0e44e4af7af5d6ae9f66074647904a
+SHA512: ccbe7c88cec4dac33d24fb8a4db73254d9f483f802a3c666df96280bcc80db8d7e79568170dcc0e00c2b2a5055971b14bf7bed49379a21b7d9d205c47646ca5d
+Homepage: https://invent.kde.org/?p=breeze.git/breeze
+Description: Widget style for Qt and KDE Software
+ This is the default widget style for KDE's Plasma desktop.
+ .
+ This package is part of the Breeze theme module.
+
+Package: kwin-common
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: kwin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 5583
+Depends: kglobalacceld, kwin-data (= 4:6.3.6-1+beluga1), plasma-desktoptheme, pnp.ids, qml6-module-org-kde-kirigami, qml6-module-org-kde-ksvg, qml6-module-qt5compat-graphicaleffects, qml6-module-qtquick, qml6-module-qtquick-window, libc6 (>= 2.38), libeis1 (>= 1.0.0), libepoxy0 (>= 1.0), libkdecorations3-6 (>= 4:6.3.4~), libkdecorations3private2 (>= 4:6.3.4~), libkf6authcore6 (>= 6.10.0~), libkf6colorscheme6 (>= 6.10.0~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6guiaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6kcmutils6 (>= 6.10.0~), libkf6kcmutilscore6 (>= 6.10.0~), libkf6kcmutilsquick6 (>= 6.10.0~), libkf6newstuffcore6 (>= 6.10.0~), libkf6newstuffwidgets6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6package6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6widgetsaddons6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkf6xmlgui6 (>= 6.10.0), libkwin6 (>= 4:6.3.6), libpipewire-0.3-0t64 (>= 0.3.29), libplasmaactivities6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.8.2), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6uitools6 (>= 6.7.0~), libqt6waylandclient6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 11), libwayland-client0 (>= 1.22~), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2), qt6-waylandclient-private-abi (= 6.8.2)
+Recommends: plasma-desktop (>= 4:6.2.90~)
+Suggests: kwin-addons (>= 4:6.2.90~)
+Breaks: kwin-data (<< 4:6.1.4-1)
+Replaces: kwin-data (<< 4:6.1.4-1)
+Filename: pool/main/kwin-common_6.3.6-1+beluga1_amd64.deb
+Size: 972112
+MD5sum: 2f90acafad39da1771f8643c578c80c0
+SHA1: fbb9365744403be2de7305925334a72e74e8aac5
+SHA256: 393daae2baaa468c46c9a0dc5b1e3996b687e34d9ece01e5eee93f5567290f76
+SHA512: cb23eb4087647ca82d3cf08859c8e26b2cd47e4308406120f80bebc4d1ba12c62582caf6b91dd44d471040a0476a5de627a91fd952634cfdeec0ad4b84c8b8f1
+Homepage: https://projects.kde.org/projects/kde/workspace/kwin
+Description: KDE window manager, common files
+ KWin (pronounced as one syllable "kwin") is the window
+ manager for the KDE Plasma Desktop. It gives you complete
+ control over your windows, making sure they're not in the way
+ but aid you in your task. It paints the window decoration,
+ the bar on top of every window with (configurable) buttons
+ like close, maximize and minimize. It also handles placing
+ of windows and switching between them.
+ .
+ This package is part of the KDE base workspace module.
+
+Package: kwin-data
+Architecture: all
+Version: 4:6.3.6-1+beluga1
+Multi-Arch: foreign
+Priority: optional
+Section: kde
+Source: kwin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 16352
+Recommends: plasma-desktoptheme, qml6-module-org-kde-kirigami, qml6-module-org-kde-kitemmodels, qml6-module-org-kde-kquickcontrolsaddons, qml6-module-org-kde-ksvg, qml6-module-org-kde-quickcharts, qml6-module-qt5compat-graphicaleffects, qml6-module-qtmultimedia, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-window, systemsettings
+Breaks: kwin-addons (<< 4:6.0.0~)
+Replaces: kwin-addons (<< 4:6.0.0~)
+Filename: pool/main/kwin-data_6.3.6-1+beluga1_all.deb
+Size: 6747312
+MD5sum: 0fd8365b3dc3adc7ed89bba31ea7e9c6
+SHA1: 407a95645fe4247d75e13e198fa6285a27b3a29a
+SHA256: 01e1cc182ffeb7584081a141b7141b71b44c9a50e7b6c9b969157323f708ce8e
+SHA512: 26b95fc8363e69cfa68618c986ae22960becd21db4242587c7059158fda58dc49c4c17c7b99f2d2c9f519f7149a9d0d60b3a57740d4fafd49d4aebf484c4bddf
+Homepage: https://projects.kde.org/projects/kde/workspace/kwin
+Description: KDE window manager data files
+ KWin (pronounced as one syllable "kwin") is the window
+ manager for the KDE Plasma Desktop. It gives you complete
+ control over your windows, making sure they're not in the way
+ but aid you in your task. It paints the window decoration,
+ the bar on top of every window with (configurable) buttons
+ like close, maximize and minimize. It also handles placing
+ of windows and switching between them.
+ .
+ This package contains the data files
+
+Package: kwin-dev
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: libdevel
+Source: kwin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1619
+Depends: kwin-common (= 4:6.3.6-1+beluga1), libepoxy-dev (>= 1.3), libkf6config-dev (>= 6.10.0~), libkf6coreaddons-dev (>= 6.10.0~), libkf6windowsystem-dev (>= 6.10.0~), libkwin6 (= 4:6.3.6-1+beluga1), qt6-base-dev (>= 6.7.0~), qt6-declarative-dev (>= 6.7.0~)
+Filename: pool/main/kwin-dev_6.3.6-1+beluga1_amd64.deb
+Size: 244080
+MD5sum: 5b1fc6247ea8c115f01fc79f296f1c71
+SHA1: baa1ade9a0fa31026b6321fef8bf66d606c976cb
+SHA256: f1966fdd8c35795b5e54bd1fefc22ee6fd116ce9cc42049cb74b3481695fa4b4
+SHA512: c58e7dc57c7bee01b483c02897acd98b08d76baa145b7df4b4bb60958cb02ab9614c35553e805290d9081c52592763e0a6f7ac3d29dceb996b4ed0b38c05e62b
+Homepage: https://projects.kde.org/projects/kde/workspace/kwin
+Description: KDE window manager - devel files
+ KWin (pronounced as one syllable "kwin") is the window
+ manager for the KDE Plasma Desktop. It gives you complete
+ control over your windows, making sure they're not in the way
+ but aid you in your task. It paints the window decoration,
+ the bar on top of every window with (configurable) buttons
+ like close, maximize and minimize. It also handles placing
+ of windows and switching between them.
+ .
+ This package is part of the KDE base workspace module.
+
+Package: kwin-style-breeze
+Architecture: amd64
+Version: 4:6.3.5-1+beluga1
+Priority: optional
+Section: kde
+Source: breeze
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 820
+Depends: kde-style-breeze (= 4:6.3.5-1+beluga1), libc6 (>= 2.32), libkdecorations3-6 (>= 4:6.2.90), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6guiaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6iconthemes6 (>= 6.10.0~), libkf6kcmutils6 (>= 6.10.0~), libkf6kcmutilscore6 (>= 6.10.0~), libkf6widgetsaddons6 (>= 6.0.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.8.2), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 5)
+Recommends: libkf6kcmutils-bin
+Filename: pool/main/kwin-style-breeze_6.3.5-1+beluga1_amd64.deb
+Size: 150792
+MD5sum: f4312d44fcb929c411e9d26fd5a662ca
+SHA1: 494cd73646931916b61376bd877c0f3651d9b5cc
+SHA256: e5b2cde3695309afb66c5899f91a9b246bc861b4dc47323b3d6cdb41387d2e36
+SHA512: edd24dfd56c8883c5294ce39dd67ebfaa57bead73b30b8d5b13aab9df6407d48d596411f06b6f254f02fd0069793592a463ac079bf7800112216ed3de57e2b76
+Homepage: https://invent.kde.org/?p=breeze.git/breeze
+Description: KWin Breeze Style
+ This is the Breeze window manager style for the KDE Plasma 6 desktop.
+ .
+ This package is part of the Breeze theme module.
+
+Package: kwin-wayland
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: kwin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1799
+Provides: kwin
+Depends: libcap2-bin, xwayland, libc6 (>= 2.38), libcanberra0 (>= 0.2), libepoxy0 (>= 1.0), libkdecorations3-6 (>= 4:6.3.4~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6configwidgets6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6dbusaddons6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6idletime6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkglobalacceld0 (>= 6.3.4~), libkwin6 (>= 4:6.3.6), libqaccessibilityclient-qt6-0 (>= 0.6.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 13.1), libsystemd0 (>= 214), libxcb-composite0, libxcb-randr0 (>= 1.3), libxcb-xfixes0, libxcb1 (>= 1.8), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2)
+Recommends: xwaylandvideobridge
+Filename: pool/main/kwin-wayland_6.3.6-1+beluga1_amd64.deb
+Size: 471888
+MD5sum: 0dd9c0f14ab27749b498944d4a0a0970
+SHA1: d9e3289c2d88100220596c0ee0d85d5a535b4863
+SHA256: 2c492b6472c45e6905522b5263bf09b04148add78b3af43e92bd398d785c003a
+SHA512: e686e676de08047fc8e92cf6e8edf7b4db378a4a1e3abdced231a9f5217fdec934ae6440e15c7fb20f32608d218c45c733d47670e8a0344bec20106ed59127a4
+Homepage: https://projects.kde.org/projects/kde/workspace/kwin
+Description: KDE window manager, Wayland version
+ KWin (pronounced as one syllable "kwin") is the window
+ manager for the KDE Plasma Desktop. It gives you complete
+ control over your windows, making sure they're not in the way
+ but aid you in your task. It paints the window decoration,
+ the bar on top of every window with (configurable) buttons
+ like close, maximize and minimize. It also handles placing
+ of windows and switching between them.
+ .
+ This package provides the wayland version, which is still a work in progress
+ project, and is available as a PREVIEW release. Don't expect the same
+ stability as with the x11 version.
+
+Package: kwin-x11
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: kwin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1688
+Provides: kwin, x-window-manager
+Depends: libc6 (>= 2.38), libcanberra0 (>= 0.2), libepoxy0 (>= 1.0), libgcc-s1 (>= 3.4), libkdecorations3-6 (>= 4:6.3.4~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6configwidgets6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkwin6 (>= 4:6.3.6), libqaccessibilityclient-qt6-0 (>= 0.6.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 13.1), libx11-6, libxcb-composite0, libxcb-keysyms1 (>= 0.4.1), libxcb-randr0 (>= 1.3), libxcb-render0, libxcb-shape0, libxcb-xfixes0, libxcb-xkb1, libxcb1 (>= 1.6), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.7.0~), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2)
+Filename: pool/main/kwin-x11_6.3.6-1+beluga1_amd64.deb
+Size: 456816
+MD5sum: 4cc0d4f32ca44abf24baa38c0c6bcda8
+SHA1: 55258c1d0f2da45263aeca1c30a90cbcfd552fac
+SHA256: 86b7fe8a01d52935e7503e82c327d215aeac26bdb18666849aa022003fb1b0fc
+SHA512: f867f0b984a5954ed054172164fb0ef0c8037e01cdc25f24350ab980a184714a6590402ea566002554e98fd98bc85522b09a761a8d9dd0a12d3cf734aa33b25c
+Homepage: https://projects.kde.org/projects/kde/workspace/kwin
+Description: KDE window manager, X11 version
+ KWin (pronounced as one syllable "kwin") is the window
+ manager for the KDE Plasma Desktop. It gives you complete
+ control over your windows, making sure they're not in the way
+ but aid you in your task. It paints the window decoration,
+ the bar on top of every window with (configurable) buttons
+ like close, maximize and minimize. It also handles placing
+ of windows and switching between them.
+ .
+ This package is part of the KDE base workspace module.
+
+Package: libbatterycontrol6
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 326
+Depends: libc6 (>= 2.14), libkf6i18n6 (>= 6.10.0~), libkf6solid6 (>= 6.0.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libstdc++6 (>= 5), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2)
+Filename: pool/main/libbatterycontrol6_6.3.6-2+beluga1_amd64.deb
+Size: 78596
+MD5sum: c105fdc1460d3b3314f516105eed9a6a
+SHA1: 2c390137acef1fce9b479c797905832c2266235c
+SHA256: 1e2bb3333b71155138e538b9122f41700ac758e20e76227960b717467b231918
+SHA512: 1b3e841b2a4fc10bb2327d392e0aa3853c195ccb398634dae191a6669b30c93de4d29e2a99d769d7e3d79ebfe6912d948ccefa1ea258f99da21d30359e34518c
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace battery control library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This package contains the battery control library files.
+
+Package: libcolorcorrect6
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 252
+Depends: libc6 (>= 2.38), libkf6i18n6 (>= 6.10.0~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libstdc++6 (>= 5)
+Filename: pool/main/libcolorcorrect6_6.3.6-2+beluga1_amd64.deb
+Size: 55504
+MD5sum: 5f73d57ca287dd5eaaf8e9e9662621e7
+SHA1: 53bae0b5570d1b4ee4175c14e7cf7c83bd6bf490
+SHA256: 077cb05ecac07dbfafbcf8f2f52d1a2b3e971dbe9ba2b409b9d5886e6e16ffc2
+SHA512: d8900fd16f4e436e1e54be715aad7d6856ef11f161508dfa1586a535940079ce49b6ffa24d2686e4ac8506b0ccc4fcdb7f56d7fcea37b3eb7bd1b708556a1109
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace color correction library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This library can be used for configuring the color correction at
+ the compositor level. This includes adjusting screen gamma levels
+ and setting night time color temperature (Night Light).
+ .
+ Currently only controlling KWin in Wayland mode is supported.
+ .
+ This package contains the color correction library files.
+
+Package: libdolphinvcs-dev
+Architecture: amd64
+Version: 4:25.04.3-1+deb13u1+beluga1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: dolphin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 56
+Depends: libdolphinvcs6 (= 4:25.04.3-1+deb13u1+beluga1), qt6-base-dev (>= 6.5.0~)
+Filename: pool/main/libdolphinvcs-dev_25.04.3-1+deb13u1+beluga1_amd64.deb
+Size: 15444
+MD5sum: 0c98e0d853f5f6059667e774c821a2e0
+SHA1: d7cb817625cc3c963a486205e4d8e01cd0697148
+SHA256: 215626f2668f197c5b0054bcdf99e40aad9923521fc40e582e113e0a7268d1be
+SHA512: 73313550c4610e2e06223773b69e7d9744c099cff910b14d324a5d451478181841269d1c8ebd005f628e88ff587142ae7372d62c8807763299c84707760eaf14
+Homepage: https://apps.kde.org/dolphin/
+Description: library to show version control in Dolphin - development files
+ This library enables developers to expand Dolphin with the ability to show
+ version control status in directories that are version controlled.
+ .
+ This package contains the development files.
+
+Package: libdolphinvcs6
+Architecture: amd64
+Version: 4:25.04.3-1+deb13u1+beluga1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: dolphin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 52
+Depends: libc6 (>= 2.4), libqt6core6t64 (>= 6.8.2), libstdc++6 (>= 5)
+Filename: pool/main/libdolphinvcs6_25.04.3-1+deb13u1+beluga1_amd64.deb
+Size: 13524
+MD5sum: 0ad55f659ea08295aa28ab06ae6f51a2
+SHA1: 9a9e96330ae1da07636be29490de2d92a40524a4
+SHA256: c3fab17b069ad09c5aa4534a44e12f49ac25505ea5c0bd2ae31a54f5f7a8b7e1
+SHA512: 0044d38e4018551f83a9a36e15ff7279ed90abc845761fd9305b8392025d8885ccea8a6c537ae687570f01e78b5db24704b48e42d3e21c7a2eab15df5964ce62
+Homepage: https://apps.kde.org/dolphin/
+Description: library to show version control in Dolphin
+ This library enables developers to expand Dolphin with the ability to show
+ version control status in directories that are version controlled.
+
+Package: libkf6xmlgui-data
+Architecture: all
+Version: 6.13.0-1+beluga1
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: kf6-kxmlgui
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 2375
+Filename: pool/main/libkf6xmlgui-data_6.13.0-1+beluga1_all.deb
+Size: 335776
+MD5sum: 01f2fb1a9723695cada739b9144909d4
+SHA1: 9e50456311b1be71d97ef4ede96f8f755a73378c
+SHA256: 37beda57671cf660e661ae15efc3f574130d18f2bc46aba26526295446e5c832
+SHA512: e33fb617b7f6f749ba9e63a4af05862af6cd67d9bb2809117f4ea3c12d05d06d9ddc13ee40b4749a81c44ea8fc0780e346db118c65a83491c2faf2ef2e2783c3
+Homepage: https://invent.kde.org/frameworks/kxmlgui
+Description: User configurable main windows
+ framework for designing the user interface
+ of an application using XML, using the idea
+ of actions.
+ .
+ This package contains the data files.
+
+Package: libkf6xmlgui-dev
+Architecture: amd64
+Version: 6.13.0-1+beluga1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: kf6-kxmlgui
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 296
+Depends: libkf6config-dev (>= 6.13.0~), libkf6configwidgets-dev (>= 6.13.0~), libkf6globalaccel-dev (>= 6.13.0~), libkf6guiaddons-dev (>= 6.13.0~), libkf6itemviews-dev (>= 6.13.0~), libkf6xmlgui6 (= 6.13.0-1+beluga1), qt6-base-dev (>= 6.6.0~), libc6 (>= 2.4), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.6.0~), libstdc++6 (>= 5)
+Recommends: libkf6xmlgui-doc (= 6.13.0-1+beluga1)
+Filename: pool/main/libkf6xmlgui-dev_6.13.0-1+beluga1_amd64.deb
+Size: 55596
+MD5sum: 2159c2d2f42616ea51c478902287a48c
+SHA1: ff6ad7336210c4235a766fd22061c1059fae7eb3
+SHA256: af0d7e3d603fbdf086a752e5ff0f502d611974de272277c72c2bd00798492aec
+SHA512: 797e5f1bbdb96616433ad3ccfa999c016dc6e025459cea49e224f523ca0ac02c4cad1270c45ac8a3cd43e981fb9011d9e6fa9c7c00bab399e82ef2b7d8c00af0
+Homepage: https://invent.kde.org/frameworks/kxmlgui
+Description: User configurable main windows - development files
+ framework for designing the user interface
+ of an application using XML, using the idea
+ of actions.
+ .
+ Contains development files for kxmlgui.
+
+Package: libkf6xmlgui-doc
+Architecture: all
+Version: 6.13.0-1+beluga1
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: kf6-kxmlgui
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 988
+Filename: pool/main/libkf6xmlgui-doc_6.13.0-1+beluga1_all.deb
+Size: 661892
+MD5sum: 19e7b79b1054dc2331bb09485afbc973
+SHA1: 7ebfeeae2326138c9344059dc4c5912a845ccf8e
+SHA256: 1d3f6820bc94c48bb1703c07d93d15ad1d77527e223368595070b46e8c1aa77a
+SHA512: c1eb8c1051bca549cad6dbbfe41bab30765d2ca3dd3943081e0e1e253860a85fccae91a3b1773854df2bc43a95ec98dbd9640117757e0e3ea4efab1ff474dbdb
+Homepage: https://invent.kde.org/frameworks/kxmlgui
+Description: User configurable main windows - documentation
+ framework for designing the user interface
+ of an application using XML, using the idea
+ of actions.
+ .
+ This package contains the qch documentation files.
+
+Package: libkf6xmlgui6
+Architecture: amd64
+Version: 6.13.0-1+beluga1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: kf6-kxmlgui
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1007
+Depends: libkf6xmlgui-data (= 6.13.0-1+beluga1), libc6 (>= 2.14), libkf6colorscheme6 (>= 6.0.0), libkf6configcore6 (>= 6.13.0~), libkf6configgui6 (>= 6.13.0~), libkf6configwidgets6 (>= 6.13.0~), libkf6coreaddons6 (>= 6.13.0~), libkf6globalaccel6 (>= 6.13.0~), libkf6guiaddons6 (>= 6.13.0), libkf6i18n6 (>= 6.13.0~), libkf6iconthemes6 (>= 6.13.0~), libkf6iconwidgets6 (>= 6.13.0~), libkf6itemviews6 (>= 6.13.0~), libkf6widgetsaddons6 (>= 6.13.0~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.6.0~), libqt6gui6 (>= 6.8.2), libqt6printsupport6 (>= 6.6.0~), libqt6widgets6 (>= 6.6.0~), libqt6xml6 (>= 6.6.0), libstdc++6 (>= 5), qt6-base-private-abi (= 6.8.2)
+Filename: pool/main/libkf6xmlgui6_6.13.0-1+beluga1_amd64.deb
+Size: 290028
+MD5sum: 98a56ced840903fc98e2514b683f371e
+SHA1: 864bbebc246d6ed6abbef521e3c2369f8d5ff5e8
+SHA256: ea546b32a0b55e1505275fe9868813243c17c08657132d7606f492f88857a379
+SHA512: 8610e75d9a73b73df3fde4607708cd68fca60c4b711795eecb5fb2a1844b803e9b3a074548c7b273a31019eceafa6ec7f7e267a0f4c25236e61e7bbee22e4301
+Homepage: https://invent.kde.org/frameworks/kxmlgui
+Description: User configurable main windows
+ framework for designing the user interface
+ of an application using XML, using the idea
+ of actions.
+
+Package: libkfontinst6
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 325
+Depends: libc6 (>= 2.33), libfontconfig1 (>= 2.12.6), libkf6i18n6 (>= 6.10.0~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6xml6 (>= 6.7.0~), libstdc++6 (>= 5)
+Filename: pool/main/libkfontinst6_6.3.6-2+beluga1_amd64.deb
+Size: 83000
+MD5sum: 31bff3eb8dc9756b962d77c2d698fd46
+SHA1: d7b59949bce5a7b47a1b969bc629c81ff4cf4e16
+SHA256: e2a73101a870865fa235c79bcf15b1b3337e8229e2df6f676861b7ba6a13a4a7
+SHA512: 898ad5472f5273430ecc71d98ed080966e110f4feb7cbcc8970ffd0405daac7d8b32a7f9900b63acae4f0640533313878bfd2d234b53fd4de88770265e8927ea
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace fonts installation library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This package contains the fonts installation library files.
+
+Package: libkfontinstui6
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 259
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libkf6configcore6 (>= 6.0.0), libkf6i18n6 (>= 6.10.0~), libkfontinst6 (>= 4:6.1.4), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.7.0~), libstdc++6 (>= 5), libx11-6, libxft2 (>> 2.1.1), qt6-base-private-abi (= 6.8.2)
+Filename: pool/main/libkfontinstui6_6.3.6-2+beluga1_amd64.deb
+Size: 63332
+MD5sum: 2d9a262c822f732e98e6ae195f5ce1a6
+SHA1: 537e059a44d9b01f10de451e76aa8629a931d2fb
+SHA256: c57921a13f1811f529992f33e5999847385a0d6b05215e93f6d8d817eb9570ec
+SHA512: a8b2b9d9bd437b6e79ba16efb9f903e149630d425185c0ac7edea908b7f656ec9b04b5c6f79f50ad74a124eb5169a1c744aa201a9ea92ea6992bca18ff14a804
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace UI components for fonts installation
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This library provides UI components to manage fonts installation
+ used in the fonts installation KCM configuration screen.
+ .
+ This package contains the library files for the fonts installation
+ UI components.
+
+Package: libklipper6
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 633
+Depends: kio6, libc6 (>= 2.32), libkf6configcore6 (>= 6.0.0), libkf6configgui6 (>= 6.0.0), libkf6configwidgets6 (>= 6.0.0), libkf6coreaddons6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6guiaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6iconwidgets6 (>= 6.10.0~), libkf6jobwidgets6 (>= 6.0.0), libkf6kiocore6 (>= 6.10.0~), libkf6kiogui6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6prison6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libkf6widgetsaddons6 (>= 6.0.0), libkf6windowsystem6 (>= 6.0.0), libkf6xmlgui6 (>= 6.0.0), libkwaylandclient6 (>= 4:6.3.4~), libplasmaquick6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6sql6 (>= 6.8.2), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 5), libxcb-util1 (>= 0.4.0), libxcb1
+Recommends: plasma-workspace-doc (>= 4:6.3.6-2+beluga1)
+Filename: pool/main/libklipper6_6.3.6-2+beluga1_amd64.deb
+Size: 163028
+MD5sum: e0011eeaf0896766a8c765565288018f
+SHA1: ce6b5a93f2bca04ed3a747c49f3ef8a73b116ce4
+SHA256: 72ef7e239241c219ca935759c6529c2ecaa1297e433e6ecd46a8c06e757c68a7
+SHA512: d611a545ad929669ba03b3ed3a519969f2f3f75363abd9a64f0e3c9679437fa31ea7fd38c1296f10da9e766bf826317d6c7c9c82fc6eafa873ec35212549bc06
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspaces Klipper library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ Klipper is the Plasma clipboard utility. It stores clipboard
+ history, and allows you to link clipboard contents to application
+ actions.
+ .
+ This package contains the Klipper library files.
+
+Package: libkmpris6
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 530
+Depends: libc6 (>= 2.32), libkf6configcore6 (>= 6.0.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6qml6 (>= 6.7.0~), libstdc++6 (>= 11), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2)
+Filename: pool/main/libkmpris6_6.3.6-2+beluga1_amd64.deb
+Size: 123012
+MD5sum: def2f92ec8f4676b217caf868a8b25a9
+SHA1: ad5513dc8632918449753bb722c586db759315ed
+SHA256: 0d3a42dc13cbf0fb65971487ebf1adf12c871277bdb87aec80a7cf9b16da5183
+SHA512: 6e2f74a8e31cff506b7ad2af3a392fb218c8f26408713e86df444967b23519e14728fe887345c4b72bc4034836fbb324792525b5d8c2306f81ec9157d310cb4c
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace MPRIS library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This library can be used to control Media Player Remote Interfacing
+ Specification-compatible media players.
+ .
+ This package contains Plasma Workspace MPRIS library files.
+
+Package: libkwin6
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: libs
+Source: kwin
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 9573
+Depends: libc6 (>= 2.38), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.116), libepoxy0 (>= 1.3), libgbm1 (>= 21.1.0), libinput10 (>= 1.27.1), libkdecorations3-6 (>= 4:6.3.4~), libkdecorations3private2 (>= 4:6.3.4~), libkf6colorscheme6 (>= 6.10.0~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6configqml6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6i18nqml6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6package6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkglobalacceld0 (>= 6.3.4~), libkscreenlocker6 (>= 6.3.4~), libkwaylandclient6 (>= 4:6.3.4~), liblcms2-2 (>= 2.4), libplasmaactivities6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.7.2), libqt6opengl6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6sensors6 (>= 6.7.0~), libqt6svg6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 13.1), libudev1 (>= 183), libwayland-client0 (>= 1.22~), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-cursor0 (>= 0.0.99), libxcb-damage0, libxcb-dri3-0 (>= 1.13), libxcb-glx0, libxcb-icccm4 (>= 0.4.2), libxcb-keysyms1 (>= 0.4.1), libxcb-present0, libxcb-randr0 (>= 1.12), libxcb-render0, libxcb-shape0, libxcb-shm0 (>= 1.10), libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.6), libxcvt0 (>= 0.1.0), libxkbcommon0 (>= 0.7.0), qt6-base-private-abi (= 6.8.2)
+Filename: pool/main/libkwin6_6.3.6-1+beluga1_amd64.deb
+Size: 2170828
+MD5sum: 48ef203fcd0edf48801e8d448b697c3f
+SHA1: 4ea8f16ed7f81d1f13fb5b1ce8af73aab32386fb
+SHA256: 5631d3276bab17da01bb18c3ad74b66a347610d919c36aec75393eb3e76b165b
+SHA512: 46ef040bcb4886aec3729826c15508276c4f3b09c3c11d2611c338d578d10fd545be2142b7975d990af4e44f1409fd5da0085293ab40e6e0ddb8c7a58242bb5b
+Homepage: https://projects.kde.org/projects/kde/workspace/kwin
+Description: KDE window manager library
+ KWin (pronounced as one syllable "kwin") is the window
+ manager for the KDE Plasma Desktop. It gives you complete
+ control over your windows, making sure they're not in the way
+ but aid you in your task. It paints the window decoration,
+ the bar on top of every window with (configurable) buttons
+ like close, maximize and minimize. It also handles placing
+ of windows and switching between them.
+ .
+ This package is part of the KDE base workspace module.
+
+Package: libkworkspace6-6
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 493
+Depends: libc6 (>= 2.38), libkf6configcore6 (>= 6.0.0), libkf6coreaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6package6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libkf6windowsystem6 (>= 6.0.0), libplasma6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.7.0~), libqt6waylandclient6 (>= 6.6.0), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0), libxau6 (>= 1:1.0.11), libxcb-randr0 (>= 1.3), libxcb1
+Filename: pool/main/libkworkspace6-6_6.3.6-2+beluga1_amd64.deb
+Size: 121116
+MD5sum: 20c46fb8cb8bf4f97ed52bff5faef7c0
+SHA1: 87d3b0a3ebd467861b7b31bc21be77decaff3f0d
+SHA256: f14b55bd5c183255dadee894782f1154d5ec001a034700558408119a418dab18
+SHA512: f67e511d108f0856ae00bfd02ad147917ea971847646a20fbc96f359c2e78e5662450cd54855263b6fc6eaa52c47a979cc74ca81e8349047d661cdde3ad1832f
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This library provides the core features of Plasma Workspace like
+ display, login and session management.
+ .
+ This package contains the main Plasma Workspace library files.
+
+Package: libnotificationmanager1
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 979
+Depends: kio6, libc6 (>= 2.32), libkf6configcore6 (>= 6.0.0), libkf6configgui6 (>= 6.0.0), libkf6coreaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6itemmodels6 (>= 6.10.0~), libkf6kiofilewidgets6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libkf6windowsystem6 (>= 6.0.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libstdc++6 (>= 5)
+Filename: pool/main/libnotificationmanager1_6.3.6-2+beluga1_amd64.deb
+Size: 229816
+MD5sum: 8b9b4240f585a706a6ac06ec95084fef
+SHA1: a602d6ed161b57db8ad4f3f61a7a9bef061d98a1
+SHA256: 4aa69ec32dd576e00fabce410ff8cd3c9d98fe447c13b6fb167b9ad588c25d8c
+SHA512: 37a652e96a11f790ad6f3744763ceeef50bf012175b556d67b19676f94fa75692b3a4aac925583d41cda38ff49fe7681ac262560de15977882723c2b994f7671
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace notification manager library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This library is responsible for listing notifications, closing them
+ and interacting with them in Plasma.
+ .
+ This package contains the notification manager library files.
+
+Package: libplymouth-dev
+Architecture: amd64
+Version: 24.004.60-5+beluga1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 235
+Depends: libplymouth5 (= 24.004.60-5+beluga1)
+Breaks: plymouth-dev (<< 0.9.2-1~)
+Replaces: plymouth-dev (<< 0.9.2-1~)
+Filename: pool/main/libplymouth-dev_24.004.60-5+beluga1_amd64.deb
+Size: 27576
+MD5sum: 20db0b821c8391a67bc700481c175816
+SHA1: afaa264ec3e2bfb3946b285644d57567a37a596b
+SHA256: 8c1de5b3f145cd9f2688bb307921ba2ed442da1f05a75c0cd334010adc2b1af2
+SHA512: 6bcaf7384fe7c21993c895db9eba7e3dd8482191c15d0e34b90ab9a3bcc282de53e08ec279fde465d1aa4bc170f52c899765c8b5ccd2cbd17dbfcf81398ce2e9
+Homepage: https://www.freedesktop.org/wiki/Software/Plymouth
+Description: graphical boot animation and logger - development files
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the development files to build Plymouth plugins.
+
+Package: libplymouth5
+Architecture: amd64
+Version: 24.004.60-5+beluga1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 489
+Depends: libc6 (>= 2.38), libevdev2 (>= 0.9.1), libpng16-16t64 (>= 1.6.46), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0)
+Breaks: plymouth (<< 0.9.2-1~)
+Replaces: plymouth (<< 0.9.2-1~)
+Filename: pool/main/libplymouth5_24.004.60-5+beluga1_amd64.deb
+Size: 126072
+MD5sum: 509c7a2951012f729412a3b12f9e6c28
+SHA1: 274028254ced094388b2c65eb2e51608e5e49267
+SHA256: 8c9b1fc08bb25e75e02ebd87ae2e7d84fe646505a45c5047dc78cb0bd4314667
+SHA512: 8013fc8cb1efa94328159a2c2fc429f796b2ecaf6f4fe7d345b4524f065485074c8cbe6b44893fb6a7879cd6623b22c38567c18f0c0bbeccfdd61db348590a51
+Homepage: https://www.freedesktop.org/wiki/Software/Plymouth
+Description: graphical boot animation and logger - shared libraries
+ Plymouth is an application that runs very early in the boot process
+ (even before the root filesystem is mounted!) that provides a graphical
+ boot animation while the boot process happens in the background.
+ .
+ This package contains the shared libraries.
+
+Package: libtaskmanager6
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1176
+Depends: libc6 (>= 2.32), libkf6configcore6 (>= 6.0.0), libkf6coreaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6itemmodels6 (>= 6.10.0~), libkf6jobwidgets6 (>= 6.0.0), libkf6kiogui6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libkf6windowsystem6 (>= 6.0.0), libkworkspace6-6 (>= 4:6.1.0), libplasmaactivities6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6waylandclient6 (>= 6.6.0), libstdc++6 (>= 5), libwayland-client0 (>= 1.20.0)
+Filename: pool/main/libtaskmanager6_6.3.6-2+beluga1_amd64.deb
+Size: 284656
+MD5sum: db5f1c8cf14b36d72e8a59c08d549102
+SHA1: 5d8a0d2004df6b3905e94653fc1a4674ae94c3b7
+SHA256: 77bfa9f641375d690c7a21cdd10f068129759beed1eadeff1048d615aceddd2c
+SHA512: 71cf4d7fada6c2fcaa51b06eb3fb8fe0b58810839430bd66044b9f31782c974510399c54e477d449273a3eb30fadaaf1b678bdd643bd2438cc72246c5f6dc7a3
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace task manager library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ The task manager library provides various abstractions for listing
+ windows, startup tasks and launcher jobs.
+ .
+ This package contains the task manager library files.
+
+Package: libweather-ion7
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libs
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 226
+Depends: libc6 (>= 2.4), libplasma5support6 (>= 4:6.3.4~), libqt6core6t64 (>= 6.8.2), libstdc++6 (>= 5)
+Filename: pool/main/libweather-ion7_6.3.6-2+beluga1_amd64.deb
+Size: 47912
+MD5sum: f1df2b7a741fb7cb1aace640998f7f5b
+SHA1: 9c882acfcefdeb8809aaa7eeeae40509e8285faa
+SHA256: afdc70c39282d2beb7d120f590673edb650343f6ee080462f1f73596cb3bb02c
+SHA512: 5c3e9d4789199d8f6918b9dab609aed58037df2ee68923fef78c7777d22d73d34de99fbd0b1d353d2f08a3c583b68f1230b32259ecfcfa4d91d91cc7990daabb
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace weather information library
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This library provides support for interfacing with online weather
+ information sources.
+ .
+ This package contains the weather information library files.
+
+Package: plasma-desktop-data
+Architecture: all
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: plasma-desktop
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 22601
+Depends: python3:any
+Breaks: plasma-widgets-addons (<< 4:5.25.70~)
+Replaces: plasma-widgets-addons (<< 4:5.25.70~)
+Filename: pool/main/plasma-desktop-data_6.3.6-1+beluga1_all.deb
+Size: 10767496
+MD5sum: e5c54194d9a525ea935e7f63e530a81d
+SHA1: f8c2432e6c9a9d339da41da798ce61347b8abfb4
+SHA256: 794516390d6e20aba7d0121cafb2e3d3d066285033430ee64c8f4cd65bce6b59
+SHA512: bd3f269db9854edf3721155ef315776d04c69aab2c1b12e49774b5541f4d2efc1fa85dca994094f28e8732239a28ec0a9f2449dc246d104ebaffe0b67394b880
+Homepage: https://invent.kde.org/plasma/plasma-desktop
+Description: Tools and widgets for the desktop data files
+ Plasma Desktop offers a beautiful looking desktop
+ that takes complete advantage of modern computing technology.
+ Through the use of visual effects and scalable graphics,
+ the desktop experience is not only smooth but also pleasant
+ to the eye. The looks of Plasma Desktop not only provide beauty,
+ they are also used to support and improve your computer
+ activities effectively, without being distracting.
+ .
+ This package is part of the KDE Plasma.
+ .
+ This package contains the data files for the Plasma shell.
+
+Package: plasma-desktop-dev
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: devel
+Source: plasma-desktop
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 54
+Filename: pool/main/plasma-desktop-dev_6.3.6-1+beluga1_amd64.deb
+Size: 18364
+MD5sum: 2e72b49ca52042d167da8b509f342f80
+SHA1: db9fb4c464db48beb42e7d640b84983244c0f2b4
+SHA256: a5fb7dd758caf4db6bb7c1f00ef6e658a329c9cac8115a7bcd71c907c90a2d1a
+SHA512: f6ad27ac633f6e51e798af234c13245cc4f426260384abb1d9990da96bd13a2af97420953241f0a852e2ebd714d980dcaa2f7e95c0fdbc7c097e5d9dce0a4f3c
+Homepage: https://invent.kde.org/plasma/plasma-desktop
+Description: Tools and widgets for the desktop
+ Plasma Desktop offers a beautiful looking desktop
+ that takes complete advantage of modern computing technology.
+ Through the use of visual effects and scalable graphics,
+ the desktop experience is not only smooth but also pleasant
+ to the eye. The looks of Plasma Desktop not only provide beauty,
+ they are also used to support and improve your computer
+ activities effectively, without being distracting.
+ .
+ This package is part of the KDE Plasma.
+ .
+ This package contains the development files for the Plasma shell.
+
+Package: plasma-desktop-doc
+Architecture: all
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: doc
+Source: plasma-desktop
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 7277
+Breaks: plasma-desktop-data (<< 4:6.1.90~)
+Replaces: plasma-desktop-data (<< 4:6.1.90~)
+Filename: pool/main/plasma-desktop-doc_6.3.6-1+beluga1_all.deb
+Size: 4802072
+MD5sum: 8b3ae9c69a256db949bba94eda4192ec
+SHA1: 3b119d16391f9917ba689b7b3c6deb9e39e3b2cf
+SHA256: 17473538829ad191ac1aa1f3751302c86adf5d012c260e45e58281e519711e16
+SHA512: 8930cfcaad230e91196a1d557750139964170576f8d421f690b9964fa60fc7f5819da3da554c8e21eec5175967e8f07865ba487327fe29b27a3db0979e5f1624
+Homepage: https://invent.kde.org/plasma/plasma-desktop
+Description: Plasma desktop documentation
+ Plasma Desktop offers a beautiful looking desktop
+ that takes complete advantage of modern computing technology.
+ Through the use of visual effects and scalable graphics,
+ the desktop experience is not only smooth but also pleasant
+ to the eye. The looks of Plasma Desktop not only provide beauty,
+ they are also used to support and improve your computer
+ activities effectively, without being distracting.
+ .
+ This package is part of the KDE Plasma.
+ .
+ This package contains the documentation for the Plasma shell.
+
+Package: plasma-desktop
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 7717
+Depends: accountsservice, breeze (>= 4:6.2.90~), kactivitymanagerd (>= 6.2.90~), kde-cli-tools (>= 4:6.2.90~), kded6, kio6 (>= 6.13.0-4~), layer-shell-qt (>= 6.2.90~), ocean-sound-theme (>= 6.2.90~), oxygen-sounds (>= 4:6.2.90~), plasma-desktop-data (= 4:6.3.6-1+beluga1), plasma-desktoptheme, plasma-integration (>= 6.2.90~), plasma-workspace (>= 4:6.2.90~), polkit-kde-agent-1 (>= 4:6.2.90~), qml6-module-org-kde-activities, qml6-module-org-kde-baloo, qml6-module-org-kde-breeze, qml6-module-org-kde-config, qml6-module-org-kde-coreaddons, qml6-module-org-kde-desktop, qml6-module-org-kde-draganddrop, qml6-module-org-kde-graphicaleffects, qml6-module-org-kde-iconthemes, qml6-module-org-kde-kcmutils, qml6-module-org-kde-kirigami, qml6-module-org-kde-kirigamiaddons-components, qml6-module-org-kde-kirigamiaddons-delegates, qml6-module-org-kde-kirigamiaddons-tableview, qml6-module-org-kde-kitemmodels, qml6-module-org-kde-kquickcontrols, qml6-module-org-kde-kquickcontrolsaddons, qml6-module-org-kde-ksvg, qml6-module-org-kde-kwindowsystem, qml6-module-org-kde-newstuff, qml6-module-org-kde-pipewire, qml6-module-qt-labs-platform, qml6-module-qt5compat-graphicaleffects, qml6-module-qtcore, qml6-module-qtqml, qml6-module-qtqml-models, qml6-module-qtqml-workerscript, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-dialogs, qml6-module-qtquick-effects, qml6-module-qtquick-layouts, qml6-module-qtquick-shapes, qml6-module-qtquick-templates, qml6-module-qtquick-window, qt6-svg-plugins, libaccounts-qt6-1 (>= 1.17), libc6 (>= 2.38), libcanberra0 (>= 0.2), libglib2.0-0t64 (>= 2.80.0), libibus-1.0-5 (>= 1.5.1), libicu76 (>= 76.1-1~), libkaccounts6-2 (>= 24.02.2), libkf6attica6 (>= 6.10.0~), libkf6authcore6 (>= 6.10.0~), libkf6baloo6 (>= 6.10.0~), libkf6bookmarks6 (>= 6.0.0), libkf6codecs6 (>= 6.10.0~), libkf6completion6 (>= 6.0.0), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6configwidgets6 (>= 6.0.0), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6dbusaddons6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6guiaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6i18nlocaledata6 (>= 6.10.0~), libkf6iconwidgets6 (>= 6.10.0~), libkf6itemviews6 (>= 6.0.0), libkf6jobwidgets6 (>= 6.0.0), libkf6kcmutils6 (>= 6.10.0~), libkf6kcmutilscore6 (>= 6.10.0~), libkf6kcmutilsquick6 (>= 6.10.0~), libkf6kiocore6 (>= 6.13.0-4~), libkf6kiofilewidgets6 (>= 6.13.0-4~), libkf6kiogui6 (>= 6.13.0-4~), libkf6kiowidgets6 (>= 6.13.0-4~), libkf6newstuffcore6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6notifyconfig6 (>= 6.10.0~), libkf6package6 (>= 6.10.0~), libkf6runner6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libkf6solid6 (>= 6.0.0), libkf6sonnetcore6 (>= 6.10.0~), libkf6sonnetui6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6widgetsaddons6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.0.0), libkf6xmlgui6 (>= 6.10.0~), libkworkspace6-6 (>= 4:6.3.4~), libnotificationmanager1 (>= 4:6.3.4~), libpackagekitqt6-1 (>= 1.1.1), libplasma6 (>= 6.3.4~), libplasmaactivities6 (>= 6.3.4~), libplasmaactivitiesstats1 (>= 6.3.4~), libplasmaquick6 (>= 6.3.4~), libprocesscore10 (>= 4:6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.8.2), libqt6network6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6quickwidgets6 (>= 6.7.0~), libqt6sql6 (>= 6.7.0~), libqt6waylandclient6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.2), libqt6xml6 (>= 6.7.0~), libscim8v5 (>= 1.4), libsdl2-2.0-0 (>= 2.24.0), libstdc++6 (>= 13.1), libtaskmanager6 (>= 4:6.3.4~), libwacom9 (>= 2.0.0), libwayland-client0 (>= 1.22~), libx11-6 (>= 2:1.2.99.901), libx11-xcb1, libxcb-keysyms1 (>= 0.4.1), libxcb-xkb1, libxcb1, libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.99.4), libxkbcommon0 (>= 0.5.0), libxkbfile1 (>= 1:1.1.0), libxkbregistry0 (>= 1.0.0), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2)
+Recommends: bluedevil (>= 4:6.2.90~), breeze-gtk-theme (>= 6.2.90~), fonts-hack, fonts-noto, fonts-noto-color-emoji, ibus-data, kde-config-gtk-style (>= 4:6.2.90~), kde-config-screenlocker (>= 6.2.90~), kde-config-sddm (>= 4:6.2.90~), kde-spectacle, kgamma (>= 6.2.90~), khelpcenter, kinfocenter (>= 4:6.2.90~), kio-extras, kmenuedit (>= 4:6.2.90~), kscreen (>= 4:6.2.90~), ksshaskpass (>= 4:6.2.90~), kwin-wayland (>= 4:6.2.90~) | kwin-x11 (>= 4:6.2.90~), kwrited (>= 4:6.2.90~), libkf6kcmutils-bin, libpam-kwallet5 (>= 6.2.90~), plasma-browser-integration (>= 6.2.90~), plasma-desktop-doc (>= 4:6.3.6-1+beluga1), plasma-discover (>= 6.2.90~), plasma-disks (>= 6.2.90~), plasma-firewall (>= 6.2.90~), plasma-nm (>= 4:6.2.90~), plasma-pa (>= 4:6.2.90~), plasma-systemmonitor (>= 6.2.90~), plasma-thunderbolt (>= 6.2.90~), plasma-vault (>= 6.2.90~), plasma-welcome (>= 6.2.90~), plasma5-integration (>= 6.2.90~), powerdevil (>= 4:6.2.90~), systemsettings (>= 4:6.2.90~), xdg-desktop-portal-gtk, xdg-desktop-portal-kde (>= 6.2.90~)
+Suggests: kde-config-flatpak (>= 6.2.90~), plasma-theme-oxygen
+Breaks: plasma-desktop-data (<< 4:6.3.2-3~), plasma-workspace (<< 4:6.1.0~), user-manager (<< 4:5.20)
+Replaces: plasma-desktop-data (<< 4:6.3.2-3~), plasma-workspace (<< 4:6.1.0~)
+Filename: pool/main/plasma-desktop_6.3.6-1+beluga1_amd64.deb
+Size: 1550388
+MD5sum: 430205f6ec3ee411cfe9c36641dbc798
+SHA1: 886a38bcfc7a15c21c051d9f5597e30eacdc7bb5
+SHA256: ea683d1a09fa7f3b91f94dadb3aa0116eead38571f6fcb09f91688c755ac2fbb
+SHA512: 26bcf57f61362f4e653cddc416d1f0717b0b3fc4e279e4439045c826eeec0a74e46b46f579b4d2472a0b339b1596a339b68f158ea2c5c378df0fa9a00400f4fe
+Homepage: https://invent.kde.org/plasma/plasma-desktop
+Description: Tools and widgets for the desktop
+ Plasma Desktop offers a beautiful looking desktop
+ that takes complete advantage of modern computing technology.
+ Through the use of visual effects and scalable graphics,
+ the desktop experience is not only smooth but also pleasant
+ to the eye. The looks of Plasma Desktop not only provide beauty,
+ they are also used to support and improve your computer
+ activities effectively, without being distracting.
+ .
+ This package is part of the KDE Plasma.
+
+Package: plasma-discover-backend-flatpak
+Architecture: amd64
+Version: 6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: plasma-discover
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 730
+Depends: flatpak, plasma-discover (= 6.3.6-1+beluga1), libappstreamqt3 (>= 1.0.5), libc6 (>= 2.14), libflatpak0 (>= 1.15.6), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.56.0), libkf6configcore6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6kiogui6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libqcoro6core0t64 (>= 0.4.0), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.7.0~), libqt6network6 (>= 6.7.0~), libstdc++6 (>= 14)
+Filename: pool/main/plasma-discover-backend-flatpak_6.3.6-1+beluga1_amd64.deb
+Size: 220052
+MD5sum: 62f25e55c6f7898ebe686d10b0652713
+SHA1: 2fd3f9ef3d71bf342e13f32b869d9033181bfe0f
+SHA256: 9dbe37997d90b885a7a51c070a433ac414a8e6d787de9a20891632fb15408554
+SHA512: 0aed0409e1b6cbbdaa928128e1dfada0654551f6a4cd996301bd70ffbb1d962d5018aceb02f2e8a8417d5bfefe9dc0a559c223b98dcddbde1eea0883ff6c7afb
+Homepage: https://invent.kde.org/plasma/discover
+Description: Discover software management suite - Flatpak backend
+ Discover is a graphical software manager for the Plasma workspace.
+ It helps users easily and quickly find applications and other software
+ they might want to install.
+ .
+ This package contains a backend for the Flatpak application
+ bundling system.
+
+Package: plasma-discover-backend-fwupd
+Architecture: amd64
+Version: 6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: plasma-discover
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 140
+Depends: plasma-discover (= 6.3.6-1+beluga1), libc6 (>= 2.14), libfwupd3 (>= 2.0.0), libglib2.0-0t64 (>= 2.22.0), libkf6i18n6 (>= 6.10.0~), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.7.0~), libqt6network6 (>= 6.7.0~), libstdc++6 (>= 5)
+Recommends: fwupd
+Filename: pool/main/plasma-discover-backend-fwupd_6.3.6-1+beluga1_amd64.deb
+Size: 41416
+MD5sum: b908c22ce37cfa1f84930f91f7f901ba
+SHA1: 634a7704740f0d3fdd430bb35a1d60751f18d0c4
+SHA256: 7e5072df84603da73b0fcc90a75ff68c549135cc3d0352c74d646d9d9ab8cd21
+SHA512: 279a17bb58d7812b5a0dd07bb56a9666613e0f2c58ab01b7035aee403aa73e2e1c68a916516db4169c4b84c027f99c0afaa321f042671547080653471d82502f
+Homepage: https://invent.kde.org/plasma/discover
+Description: Discover software management suite - fwupd backend
+ Discover is a graphical software manager for the Plasma workspace.
+ It helps users easily and quickly find applications and other software
+ they might want to install.
+ .
+ This package contains a backend for the firmware update daemon.
+
+Package: plasma-discover-backend-snap
+Architecture: amd64
+Version: 6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: plasma-discover
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 348
+Depends: plasma-discover (= 6.3.6-1+beluga1), libc6 (>= 2.34), libkf6authcore6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libsnapd-qt6-2-1 (>= 1.67), libstdc++6 (>= 5)
+Recommends: snapd
+Breaks: plasma-discover (<< 5.19.4-2~)
+Replaces: plasma-discover (<< 5.19.4-2~)
+Filename: pool/main/plasma-discover-backend-snap_6.3.6-1+beluga1_amd64.deb
+Size: 88608
+MD5sum: df12ae95ddfa893a55e0803c6c59e69d
+SHA1: 7c772871dd9c878226b67e162dd76c8916de8f65
+SHA256: 02bf31b3c86860f1d3e9b808a6ebf540d4d9cfd518dad6cde54d0e5f61f2cd77
+SHA512: fed9d598a06f0e809d9d8beb96199f6d6b02038e720a355e978613b068549312840c76dbedd0fc0e88c8962c0a8630fbd5f9414a9f6396123d4b5160feada47e
+Homepage: https://invent.kde.org/plasma/discover
+Description: Discover software management suite - Snap backend
+ Discover is a graphical software manager for the Plasma workspace.
+ It helps users easily and quickly find applications and other software
+ they might want to install.
+ .
+ This package contains a backend for the Ubuntu Core Snappy application
+ bundling system.
+
+Package: plasma-discover-common
+Architecture: all
+Version: 6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: plasma-discover
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 4047
+Filename: pool/main/plasma-discover-common_6.3.6-1+beluga1_all.deb
+Size: 516868
+MD5sum: d34b0a62a769034348897937d16fae0d
+SHA1: 3d8b154b41680467351c3a70f0eaaaf147c7e872
+SHA256: 51aa655c4a212e023623270c7b79737c9e19695f66675ff6a6ae4077788178a2
+SHA512: 4581d6f9f5907b5d385bfb4c1e493eba8414af7ed5243afe282231a4a1d89fa9dda10934997fd9f85f200b397d48e3dc1869cdd04bf268fea7eeaab1fdbe328a
+Homepage: https://invent.kde.org/plasma/discover
+Description: Discover software manager suite (common data files)
+ Discover is a graphical software manager for the Plasma workspace.
+ .
+ This package contains data files shared by various parts of the
+ Discover suite.
+
+Package: plasma-discover
+Architecture: amd64
+Version: 6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 2623
+Depends: appstream (>= 1.0), apt-config-icons, packagekit (>= 1.0), plasma-discover-common (= 6.3.6-1+beluga1), qml6-module-org-kde-config, qml6-module-org-kde-kcmutils, qml6-module-org-kde-kirigami, qml6-module-org-kde-kirigamiaddons-components, qml6-module-org-kde-kirigamiaddons-formcard, qml6-module-org-kde-kitemmodels, qml6-module-org-kde-purpose, qml6-module-org-kde-userfeedback, qml6-module-qt5compat-graphicaleffects, qml6-module-qtqml, qml6-module-qtqml-models, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtwebview, kio6, libappstreamqt3 (>= 1.0.5), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libkf6attica6 (>= 6.2.0~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6dbusaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6i18nqml6 (>= 6.10.0~), libkf6iconthemes6 (>= 6.11.0), libkf6idletime6 (>= 6.10.0~), libkf6jobwidgets6 (>= 6.0.0), libkf6kiocore6 (>= 6.10.0~), libkf6kiogui6 (>= 6.10.0~), libkf6newstuffcore6 (>= 6.10.0), libkf6notifications6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libkf6statusnotifieritem6 (>= 6.10.0~), libkf6widgetsaddons6 (>= 6.0.0), libkf6windowsystem6 (>= 6.0.0), libmarkdown2 (>= 2.0.6), libpackagekitqt6-1 (>= 1.1.1), libqcoro6core0t64 (>= 0.4.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.7.0~), libqt6network6 (>= 6.7.2), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6quickcontrols2-6 (>= 6.7.0~), libqt6webview6 (>= 6.6.1), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 11)
+Recommends: apt-config-icons-hidpi, apt-config-icons-large, apt-config-icons-large-hidpi, kde-config-updates, plasma-discover-backend-fwupd, software-properties-qt
+Suggests: plasma-discover-backend-flatpak, plasma-discover-backend-snap
+Filename: pool/main/plasma-discover_6.3.6-1+beluga1_amd64.deb
+Size: 677956
+MD5sum: 2e85fc622ef84f7797356b6a96c0e537
+SHA1: 4f339d4ef57260c6cb2349862ecafddb2a122b9e
+SHA256: 22b14910b1a4e1abd9a8b5e02a826543cd8feba563d61834a4bbcc98ce684087
+SHA512: 28f7fa5bdba75247d985255229e944dcb24248b6e2247777a23399d7d5c8b20eafa64bad813cf905104481e1b99d2377daf282443145fbd98b9cc484239710cd
+Homepage: https://invent.kde.org/plasma/discover
+Description: Discover software management suite
+ Discover is a graphical software manager for the Plasma workspace.
+ It helps users easily and quickly find applications and other software
+ they might want to install.
+ .
+ By allowing to navigate a software library by search, categories, top lists
+ along with detailed application information that includes screenshots
+ and reviews, users can more quickly find applications that suit their needs.
+ .
+ Discover will also keep the system up to date by notifying about updates and
+ installing them.
+
+Package: plasma-workspace-data
+Architecture: all
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: kde
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 35145
+Breaks: breeze (<< 4:5.23.90~), plasma-desktop (<< 4:5.24.0), plasma-desktop-data (<< 4:5.27.0), xdg-desktop-portal-kde (<< 6.2.0~)
+Replaces: breeze (<< 4:5.23.90~), plasma-desktop (<< 4:5.24.0), plasma-desktop-data (<< 4:5.27.0), xdg-desktop-portal-kde (<< 6.2.0~)
+Filename: pool/main/plasma-workspace-data_6.3.6-2+beluga1_all.deb
+Size: 12937524
+MD5sum: f1fd5f8edc2cbf02bf1f4cb80213d182
+SHA1: 052375401174efcc958ddffbec474e0391a6273d
+SHA256: 8e0c02fc78ee64eafcfc65cc16b63065ec3647985c6a00cdcf8d8d4f92d13a0c
+SHA512: 8568bd7b7da12fb6d3a87cd153f15c5fd365c2e6ec3c8c546f11597048a31dd21755e848b2d5753594d3ce2e6ed88e7193a7c3a61ea1cdd56414bb09d30ed2ab
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace data files
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This contains the data files for Plasma Workspace.
+
+Package: plasma-workspace-dev
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: libdevel
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 534
+Depends: libkf6itemmodels-dev (>= 6.10.0~), libplasma-dev (>= 6.3.4~), qt6-base-dev (>= 6.7.0~), qt6-declarative-dev (>= 6.7.0~), libbatterycontrol6 (= 4:6.3.6-2+beluga1), libcolorcorrect6 (= 4:6.3.6-2+beluga1), libkfontinst6 (= 4:6.3.6-2+beluga1), libkfontinstui6 (= 4:6.3.6-2+beluga1), libklipper6 (= 4:6.3.6-2+beluga1), libkworkspace6-6 (= 4:6.3.6-2+beluga1), libnotificationmanager1 (= 4:6.3.6-2+beluga1), libtaskmanager6 (= 4:6.3.6-2+beluga1), libweather-ion7 (= 4:6.3.6-2+beluga1)
+Breaks: plasma-desktop-dev (<< 4:5.20)
+Replaces: plasma-desktop-dev (<< 4:5.20)
+Filename: pool/main/plasma-workspace-dev_6.3.6-2+beluga1_amd64.deb
+Size: 82324
+MD5sum: ea025c962aad60b355b0caae67dd6ed8
+SHA1: a666600ac36169b7e106557f7a40ad921389a329
+SHA256: 05767e5fb91433174fbdc10bc769bc4e75879e89c70a8bea0a759407f67768dc
+SHA512: e2fdeeeadc7f99f858c5510707bad7b98a2a1559a8a14fca4040d537db1a1e227827bd0ecaedc6d063988ad936a3420609ad22c3868f46e87bfd10975724b1d1
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace development files
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This package contains the development files for Plasma Workspace.
+
+Package: plasma-workspace-doc
+Architecture: all
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: kde
+Source: plasma-workspace
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 4990
+Breaks: plasma-workspace-data (<< 4:6.1.90~)
+Replaces: plasma-workspace-data (<< 4:6.1.90~)
+Filename: pool/main/plasma-workspace-doc_6.3.6-2+beluga1_all.deb
+Size: 3158112
+MD5sum: ec3ce8006e2d6f64c04a68d1d22e4729
+SHA1: 295631103f2c71b47c10c280656937e94dc355de
+SHA256: d98c216fd7b07565505eee0a0bbe58ee477cc76c0d2bddced1c52b54d189cc91
+SHA512: 44fac0d1c543fc7a2a538358cb2cfb0eba17ec8eda11226ed7224a7c69ce6c4f39b02dfaf67fc90ccd168968f81a0032e830cf840030f8aef9833f12ad027e99
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: Plasma Workspace documentation
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+ .
+ This package contains the documentation for Plasma Workspace
+ components and libraries
+
+Package: plasma-workspace
+Architecture: amd64
+Version: 4:6.3.6-2+beluga1
+Priority: optional
+Section: kde
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 19834
+Provides: notification-daemon, x-session-manager
+Depends: default-dbus-session-bus | dbus-session-bus, drkonqi (>= 6.2.90~), frameworkintegration6, gdb, iso-codes, kactivitymanagerd (>= 6.2.90~), kded6, kglobalacceld (>= 6.2.90~), kwin-common (>= 4:6.2.90~), kwin-wayland (>= 4:6.2.90~), libkf6config-bin, milou (>= 4:6.2.90~), plasma-desktoptheme, plasma-integration (>= 6.2.90~), plasma-workspace-data (>= 4:6.3.6-2+beluga1), python3:any, qdbus-qt6, qml6-module-org-kde-activities, qml6-module-org-kde-breeze, qml6-module-org-kde-config, qml6-module-org-kde-coreaddons, qml6-module-org-kde-draganddrop, qml6-module-org-kde-kcmutils, qml6-module-org-kde-kholidays, qml6-module-org-kde-kirigami, qml6-module-org-kde-kirigamiaddons-components, qml6-module-org-kde-kitemmodels, qml6-module-org-kde-kquickcontrols, qml6-module-org-kde-kquickcontrolsaddons, qml6-module-org-kde-ksvg, qml6-module-org-kde-ksysguard, qml6-module-org-kde-kwindowsystem, qml6-module-org-kde-newstuff, qml6-module-org-kde-notifications, qml6-module-org-kde-pipewire, qml6-module-org-kde-plasma-plasma5support, qml6-module-org-kde-prison, qml6-module-org-kde-quickcharts, qml6-module-org-kde-userfeedback, qml6-module-qt5compat-graphicaleffects, qml6-module-qtcore, qml6-module-qtpositioning, qml6-module-qtqml, qml6-module-qtqml-models, qml6-module-qtqml-workerscript, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-dialogs, qml6-module-qtquick-layouts, qml6-module-qtquick-shapes, qml6-module-qtquick-templates, qml6-module-qtquick-virtualkeyboard, qml6-module-qtquick-window, qt6-wayland, udisks2, x11-utils, x11-xserver-utils, init-system-helpers (>= 1.52), kio6, kwallet6, libappstreamqt3 (>= 1.0.5), libbatterycontrol6 (>= 4:6.1.4), libc6 (>= 2.38), libcanberra0 (>= 0.2), libcolorcorrect6 (>= 4:6.1.0), libcrypt1 (>= 1:4.1.0), libdbus-1-3 (>= 1.10), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libice6 (>= 1:1.0.0), libicu76 (>= 76.1-1~), libkexiv2qt6-0 (>= 24.05.1), libkf6archive6 (>= 6.10.0~), libkf6authcore6 (>= 6.10.0~), libkf6baloo6 (>= 6.2.0~), libkf6bookmarks6 (>= 6.0.0), libkf6calendarevents6 (>= 6.10.0~), libkf6colorscheme6 (>= 6.0.0), libkf6completion6 (>= 6.0.0), libkf6configcore6 (>= 6.0.0), libkf6configgui6 (>= 6.3.0), libkf6configqml6 (>= 6.0.0), libkf6configwidgets6 (>= 6.0.0), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6dbusaddons6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6guiaddons6 (>= 6.10.0~), libkf6holidays6 (>= 6.2.0~), libkf6i18n6 (>= 6.10.0~), libkf6i18nlocaledata6 (>= 6.10.0~), libkf6iconthemes6 (>= 6.10.0~), libkf6jobwidgets6 (>= 6.0.0), libkf6kcmutils6 (>= 6.10.0~), libkf6kcmutilscore6 (>= 6.10.0~), libkf6kcmutilsquick6 (>= 6.10.0~), libkf6kiocore6 (>= 6.10.0~), libkf6kiofilewidgets6 (>= 6.10.0~), libkf6kiogui6 (>= 6.10.0~), libkf6kiowidgets6 (>= 6.10.0~), libkf6networkmanagerqt6 (>= 6.10.0~), libkf6newstuffcore6 (>= 6.10.0~), libkf6newstuffwidgets6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6notifyconfig6 (>= 6.10.0~), libkf6package6 (>= 6.10.0~), libkf6parts6 (>= 6.10.0~), libkf6prison6 (>= 6.10.0~), libkf6runner6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.0.0), libkf6solid6 (>= 6.0.0), libkf6statusnotifieritem6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6texteditor-bin (>= 6.10.0~), libkf6texteditor6 (>= 6.10.0~), libkf6textwidgets6 (>= 6.10.0~), libkf6unitconversion6 (>= 6.10.0~), libkf6userfeedbackcore6 (>= 6.2.0~), libkf6wallet6 (>= 6.10.0~), libkf6widgetsaddons6 (>= 6.0.0), libkf6windowsystem6 (>= 6.0.0), libkf6xmlgui6 (>= 6.0.0), libkfontinst6 (>= 4:6.1.90), libkfontinstui6 (>= 4:6.1.4), libklipper6 (>= 4:6.2.90), libkmpris6 (>= 4:6.1.4), libkscreenlocker6 (>= 6.3.4~), libksysguardsensorfaces2 (>= 4:6.3.4~), libkwaylandclient6 (>= 4:6.3.4~), libkworkspace6-6 (>= 4:6.1.0), liblayershellqtinterface6 (>= 6.3.4~), libnotificationmanager1 (>= 4:6.1.0), libpackagekitqt6-1 (>= 1.1.1), libphonon4qt6-4t64 (>= 4:4.12.0), libplasma5support6 (>= 4:6.3.4~), libplasma6 (>= 6.3.4~), libplasmaactivities6 (>= 6.3.4~), libplasmaactivitiesstats1 (>= 6.3.4~), libplasmaquick6 (>= 6.3.4~), libpolkit-qt6-1-1 (>= 0.200.0), libprocesscore10 (>= 4:6.3.4~), libqalculate23 (>= 5.5.2), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.8.2), libqt6network6 (>= 6.7.0~), libqt6positioning6 (>= 6.7.0~), libqt6printsupport6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6sql6 (>= 6.7.0~), libqt6svg6 (>= 6.7.0~), libqt6waylandclient6 (>= 6.6.0), libqt6widgets6 (>= 6.7.0~), libqt6xml6 (>= 6.7.0~), libsm6 (>= 2:1.2.6), libstdc++6 (>= 13.1), libsystemd0, libtaskmanager6 (>= 4:6.1.90), libudev1 (>= 183), libwayland-client0 (>= 1.20.0), libweather-ion7 (>= 4:6.1.90), libx11-6, libxcb-composite0, libxcb-cursor0 (>= 0.0.99), libxcb-damage0, libxcb-image0 (>= 0.2), libxcb-shape0, libxcb-util1 (>= 0.4.0), libxcb1 (>= 1.6), libxcursor1 (>> 1.1.2), libxfixes3, libxft2 (>> 2.1.1), libxtst6 (>= 2:1.2.5), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2), qt6-waylandclient-private-abi (= 6.8.2), zlib1g (>= 1:1.1.4)
+Recommends: kde-cli-tools (>= 4:6.2.90~), kio-extras, kio-fuse, ksystemstats (>= 6.2.90~), plasma-workspace-doc (>= 4:6.3.6-2+beluga1), powerdevil (>= 4:6.2.90~), systemsettings
+Breaks: breeze (<< 4:5.23.90~), plasma-desktop (<< 4:5.22.90), plasma-desktop-data (<< 4:5.22.90), plasma-workspace-wayland
+Replaces: breeze (<< 4:5.23.90~), plasma-desktop (<< 4:5.22.90), plasma-desktop-data (<< 4:5.22.90), plasma-workspace-wayland
+Filename: pool/main/plasma-workspace_6.3.6-2+beluga1_amd64.deb
+Size: 3843672
+MD5sum: 436d13504b7f019760d08621e14c55e0
+SHA1: 38fb50448a6b8dd73095b9c6688ae352f78cb838
+SHA256: a86b85c73a0486b9f19ddac19ed579cbd0231e1ee0bd1db6db18f7df1a3ae3a1
+SHA512: 08efb73b70e474b931e40f4bcbc457c7ee26f472dd9ff088533814be65968992f9fa0825cb5ae31eddf8fa8590560e142db463c52458870feff5f5d35813ee75
+Homepage: https://invent.kde.org/plasma/plasma-workspace
+Description: base for Plasma Desktop, Mobile, and Bigscreen graphical environments
+ Plasma Workspace is used as the base for Plasma Desktop, Mobile, and
+ Bigscreen. It contains shared KCM configuration screens, applets as
+ well as multiple libraries.
+
+Package: plymouth-label
+Architecture: amd64
+Version: 24.004.60-5+beluga1
+Priority: optional
+Section: misc
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 62
+Depends: plymouth (= 24.004.60-5+beluga1), libc6 (>= 2.38), libcairo2 (>= 1.14.0), libfreetype6 (>= 2.2.1), libglib2.0-0t64 (>= 2.12.0), libpango-1.0-0 (>= 1.44.3), libpangocairo-1.0-0 (>= 1.14.0), libplymouth5 (>= 23.360.11)
+Breaks: plymouth-themes (<< 0.9.2-5~)
+Replaces: plymouth-themes (<< 0.9.2-5~)
+Filename: pool/main/plymouth-label_24.004.60-5+beluga1_amd64.deb
+Size: 17316
+MD5sum: 33ae751457459311a97cdeb4cbc3e78f
+SHA1: a653fbdce0d974fa6c74795eee409611f3872995
+SHA256: 979755a100bdd9dc92d264403c453dd23da0be56bb817920d802cc51613939fe
+SHA512: 11819378f223038807f25ccb494026d079bd2fe7447387513086bf73e9a3153ed76d85a5d9c7c866c2e74251ce3a7f3f589fae749a952e1e835c59aa1496eefb
+Homepage: https://www.freedesktop.org/wiki/Software/Plymouth
+Description: boot animation, logger and I/O multiplexer - label control
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package contains the label control, used by various graphical themes
+ to render text.
+
+Package: plymouth-themes
+Architecture: amd64
+Version: 24.004.60-5+beluga1
+Priority: optional
+Section: misc
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 1129
+Provides: plymouth-theme, plymouth-themes-all, plymouth-themes-fade-in, plymouth-themes-glow, plymouth-themes-script, plymouth-themes-solar, plymouth-themes-spinfinity, plymouth-themes-spinner
+Depends: fontconfig, fontconfig-config, fonts-cantarell, fonts-dejavu-core, plymouth (= 24.004.60-5+beluga1), plymouth-label (= 24.004.60-5+beluga1), libc6 (>= 2.38), libplymouth5 (>= 23.360.11)
+Conflicts: plymouth-themes-all, plymouth-themes-fade-in, plymouth-themes-glow, plymouth-themes-script, plymouth-themes-solar, plymouth-themes-spinfinity, plymouth-themes-spinner
+Breaks: libfontconfig1 (<< 2.13.0-5~), plymouth-drm (<< 0.9.0-6~)
+Replaces: plymouth-drm (<< 0.9.0-6~), plymouth-themes-all, plymouth-themes-fade-in, plymouth-themes-glow, plymouth-themes-script, plymouth-themes-solar, plymouth-themes-spinfinity, plymouth-themes-spinner
+Filename: pool/main/plymouth-themes_24.004.60-5+beluga1_amd64.deb
+Size: 787280
+MD5sum: dc8b2b3eb39537683f5aed8212eb4614
+SHA1: 95bbb6fae31f81e5514b9de2b27c5c4a00e86667
+SHA256: e58b1b7e111d024ff4f517f0c9388d96c25ecbdcf237709f791bdc1cc6029ed6
+SHA512: 051cbebc2357db65a000b946fd67171d82d1c69494ed015ab0b2dccd293ac42ea17a7175fd7151cd260c380f12fbbec2fa49feef8f4621809d99502b4e12e0fb
+Homepage: https://www.freedesktop.org/wiki/Software/Plymouth
+Description: boot animation, logger and I/O multiplexer - themes
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package provides the following themes:
+ .
+  * fade-in: features a centered logo that fades in and out while stars twinkle
+    around the logo during system boot up.
+  * glow: features a pie chart as progress indicator.
+  * script: features a simple base theme.
+  * solar: features a blue flamed sun with animated solar flares.
+  * spinfinity: features a centered logo and animated spinner that spins in the
+    shape of an infinity sign.
+  * spinner: features a simple theme with a small spinner on a dark background.
+
+Package: plymouth-x11
+Architecture: amd64
+Version: 24.004.60-5+beluga1
+Priority: optional
+Section: misc
+Source: plymouth
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 42
+Depends: plymouth (= 24.004.60-5+beluga1), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.12.0), libgtk-3-0t64 (>= 3.21.4), libplymouth5 (>= 0.9.5)
+Recommends: plymouth-themes
+Suggests: gdm
+Filename: pool/main/plymouth-x11_24.004.60-5+beluga1_amd64.deb
+Size: 12064
+MD5sum: 9866181c8fd93b47ea0af40073709965
+SHA1: 5e1742cf6478004cd5c44e83da0f80d4d642a769
+SHA256: 38716f5c1f954d5a50e7e86a9006405f061bf12a9db2a4a4231ff7bcff4d3590
+SHA512: 988efda9f0479d6e183f7a068003af9dcde912733838912987468b2f54e2781714132e521f26f70797fcc47c78a0ec966e041a72fac9cb56fbea498052a22051
+Homepage: https://www.freedesktop.org/wiki/Software/Plymouth
+Description: boot animation, logger and I/O multiplexer - X11 renderer
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package contains the X11 renderer for a graphical boot splash.
+
+Package: plymouth
+Architecture: amd64
+Version: 24.004.60-5+beluga1
+Priority: optional
+Section: misc
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 764
+Depends: init-system-helpers (>= 1.18), initramfs-tools | dracut, systemd (>= 232-8~) | elogind, udev (>= 232-8~), libc6 (>= 2.38), libdrm2 (>= 2.4.47), libplymouth5 (>= 23.360.11)
+Suggests: desktop-base, plymouth-themes
+Conflicts: console-common
+Breaks: mawk (<< 1.3.4), plymouth-drm (<< 0.9.0-6~), plymouth-themes (<< 0.9.0-8~)
+Replaces: plymouth-drm (<< 0.9.0-6~), plymouth-themes (<< 0.9.0-8~)
+Filename: pool/main/plymouth_24.004.60-5+beluga1_amd64.deb
+Size: 142112
+MD5sum: f4f606eba361a569bb63eab6a61224b8
+SHA1: 63a8e0bd040455fff3c1571340f1782892ae952e
+SHA256: 37707b9a8a8573d1cc892e50f384361e657d279f8e91e2b27f8c458bdd01b7da
+SHA512: 48bf210c96879b7da853546e38c3745f18a9e8e1b715ce81f74b6c5235d9a62411ffb40c83d84f65478ba20e0b164221b390744a92d46e1bededc5400aae6f1d
+Homepage: https://www.freedesktop.org/wiki/Software/Plymouth
+Description: boot animation, logger and I/O multiplexer
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package provides the basic framework, enabling a text-mode animation.
+
+Package: sddm-theme-breeze
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: plasma-desktop
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 641
+Provides: sddm-theme
+Depends: plasma-desktoptheme, plasma-workspace, sddm (>= 0.21.0-2)
+Recommends: qt6-virtualkeyboard-plugin
+Filename: pool/main/sddm-theme-breeze_6.3.6-1+beluga1_amd64.deb
+Size: 582624
+MD5sum: 3eb21eaba43a6c02797b015e2d816d37
+SHA1: 21b7f79b9505669234e2acc3e6d33a3248201f2c
+SHA256: abe9f5044f099e519c3a96925d9be20f3cb36c2e9316e1bc5fcc27e3ad338c46
+SHA512: 85a933398b9ac846299490dc9c72b6cef68b3771e3fb44e6fe0980d19591d1a0a626b530d56b545e1fea86a8a939cd79adb26fe066a9e8f187ae07bef8d43479
+Homepage: https://invent.kde.org/plasma/plasma-desktop
+Description: Breeze SDDM theme
+ Plasma Workspace for KF6. Workspaces provide
+ support for KDE Plasma Widgets, integrated search,
+ hardware management and a high degree of customizability.
+ Taskmanager library.
+ .
+ This package contains the files for the breeze SDDM theme.
+
+Package: sddm-theme-debian-breeze
+Architecture: amd64
+Version: 4:6.3.6-1+beluga1
+Priority: optional
+Section: kde
+Source: plasma-desktop
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 208
+Provides: sddm-theme
+Depends: plasma-desktoptheme, plasma-workspace, qt6-svg-plugins, sddm-theme-breeze
+Recommends: desktop-base, qt6-virtualkeyboard-plugin, sddm
+Filename: pool/main/sddm-theme-debian-breeze_6.3.6-1+beluga1_amd64.deb
+Size: 148672
+MD5sum: 5eb347c35d8281b505cfb2f02e5fe147
+SHA1: 42525374e3af0404d8180dcb280f7cfc1dd25205
+SHA256: 6cf8cde6bd3b5427cc076ce3164cac95cf8992094636e917c744cc22b3252342
+SHA512: 003a369acffccaf41a885cd6b593e5f3f69f7d39da6be7f59972c4f7939b513431f1f740eb3b62fea0ad02918283e13389dbb206f5197e431c7bec208768de91
+Homepage: https://invent.kde.org/plasma/plasma-desktop
+Description: Debian Breeze SDDM theme
+ Plasma Workspace for KF5. Workspaces provide
+ support for KDE Plasma Widgets, integrated search,
+ hardware management and a high degree of customizability.
+ Taskmanager library.
+ .
+ This package contains the files for the breeze SDDM theme adapted
+ to use the active desktop-base theme for the background.
+
+Package: sddm-theme-debian-elarun
+Architecture: all
+Version: 0.21.0+git20250502.4fe234b-2+beluga1
+Priority: optional
+Section: kde
+Source: sddm
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1692
+Provides: sddm-theme
+Depends: desktop-base, qml6-module-qtquick
+Recommends: sddm
+Breaks: sddm (<< 0.21.0+git20250502.4fe234b-2+beluga1)
+Filename: pool/main/sddm-theme-debian-elarun_0.21.0+git20250502.4fe234b-2+beluga1_all.deb
+Size: 1622320
+MD5sum: 0f3fbcbaffb80bb9029a4550e90590c3
+SHA1: 0b39148bbcb5dc86d0b53973d406b019de94ca21
+SHA256: c6fc4e2a3b9c87b7b5d71885f9d428b60f13642f965f6f74ecb749992f285370
+SHA512: e7d129ad61667d5f114793a64b3a3befa16b6f21e2f4c3cdde761766c23b5f3ee89e73ddcb0d6eca57f80b57a40fafba97792074a3fde05849fb4cfdaed95150
+Homepage: https://github.com/sddm/sddm
+Description: 'Debian Elarun' Theme for SDDM X11 display manager
+ Elarun theme for SDDM, using the active desktop-base theme for the
+ background.
+
+Package: sddm-theme-debian-maui
+Architecture: all
+Version: 0.21.0+git20250502.4fe234b-2+beluga1
+Priority: optional
+Section: kde
+Source: sddm
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 375
+Provides: sddm-theme
+Depends: desktop-base, qml6-module-qtquick
+Recommends: sddm
+Breaks: sddm (<< 0.21.0+git20250502.4fe234b-2+beluga1)
+Filename: pool/main/sddm-theme-debian-maui_0.21.0+git20250502.4fe234b-2+beluga1_all.deb
+Size: 296096
+MD5sum: a33e74029ea631b301e623549d3d4c39
+SHA1: 76c0bf61ecdc5e5317e3967a3692eb5b8abf4d5e
+SHA256: 9ff6bf147fdbfc4981d742b3dfadbe0296a0d5d6304aced33d17bb646d136686
+SHA512: 5fe9825695c88cf532337c66eb042f122789a7f19283d4ff0448ef3155afe179108b22388f0065e7559eb4a7958c9196e334bd3768a3ba48dfebd90be91ced9f
+Homepage: https://github.com/sddm/sddm
+Description: 'Debian Maui' theme for SDDM X11 display manager
+ Maui theme for SDDM, using the active desktop-base theme for the
+ background
+
+Package: sddm-theme-elarun
+Architecture: all
+Version: 0.21.0+git20250502.4fe234b-2+beluga1
+Priority: optional
+Section: kde
+Source: sddm
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1692
+Provides: sddm-theme
+Depends: qml6-module-qtquick
+Recommends: sddm
+Breaks: sddm (<< 0.21.0+git20250502.4fe234b-2+beluga1)
+Filename: pool/main/sddm-theme-elarun_0.21.0+git20250502.4fe234b-2+beluga1_all.deb
+Size: 1622276
+MD5sum: f2649b861d061ef95f7b9aaff30c7cbe
+SHA1: fc854dc06edd54ee67ddeb5ceac7f83a2684001d
+SHA256: 92f1713cccd1e1aae44de6225379fae04672c2e3aac4d278c79da8e7141665fa
+SHA512: 8e23953e043b18b2eed48fb113bd2090695ddd37349272019e642c1fc3b88c76931e4a60dafd97397326a1c1f4af67aa33d9e8b8dd51ef9fff5592df856a9983
+Homepage: https://github.com/sddm/sddm
+Description: 'Elarun' Theme for SDDM X11 display manager
+ Elarun theme for SDDM
+
+Package: sddm-theme-maldives
+Architecture: all
+Version: 0.21.0+git20250502.4fe234b-2+beluga1
+Priority: optional
+Section: kde
+Source: sddm
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1325
+Provides: sddm-theme
+Depends: qml6-module-qtquick
+Recommends: sddm
+Breaks: sddm (<< 0.21.0+git20250502.4fe234b-2+beluga1)
+Filename: pool/main/sddm-theme-maldives_0.21.0+git20250502.4fe234b-2+beluga1_all.deb
+Size: 1250968
+MD5sum: 29061905b5ae18b28bddcd622e133f6f
+SHA1: c242a66b4b9a36fb9c6f0bb40e78d478bfe911d9
+SHA256: 0544b312b065f2cceddb2377225be581caa03a53a9142ec5073f9f698e5352eb
+SHA512: dfa53d038f666970d6f3858d4763a20bcc43441cc1a06f74ea0529b15ed26a449f750c10803d3b7e8e2d738e098872afe6c376ba6026219579e96873a7c1632b
+Homepage: https://github.com/sddm/sddm
+Description: 'Maldives' theme for SDDM X11 display manager
+ Maldives theme for SDDM
+
+Package: sddm-theme-maui
+Architecture: all
+Version: 0.21.0+git20250502.4fe234b-2+beluga1
+Priority: optional
+Section: kde
+Source: sddm
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 482
+Provides: sddm-theme
+Depends: qml6-module-qtquick
+Recommends: sddm
+Breaks: sddm (<< 0.21.0+git20250502.4fe234b-2+beluga1)
+Filename: pool/main/sddm-theme-maui_0.21.0+git20250502.4fe234b-2+beluga1_all.deb
+Size: 386088
+MD5sum: b7f4a0230148032f79e7ee7f9ae794b0
+SHA1: a6ad7b3e424ef6f747c9afc61bafcd6894d0612f
+SHA256: 44b0bca7cf8804631efd33579f52311aa7b304d4278e7f4261b9e24b4ed4d49e
+SHA512: dedfe4311883688f3107a70a7a859da4fd0c4a58daaa537fd99e90d12b1e16e90f40e1f6f45d9c0a56040e1c58e8332507f00e94fcb7931c72461f31a66c6555
+Homepage: https://github.com/sddm/sddm
+Description: 'Maui' theme for SDDM X11 display manager
+ Maui theme for SDDM
+
+Package: sddm-theme-maya
+Architecture: all
+Version: 0.21.0+git20250502.4fe234b-2+beluga1
+Priority: optional
+Section: kde
+Source: sddm
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 367
+Provides: sddm-theme
+Depends: qml6-module-qtquick
+Recommends: sddm
+Breaks: sddm (<< 0.21.0+git20250502.4fe234b-2+beluga1)
+Filename: pool/main/sddm-theme-maya_0.21.0+git20250502.4fe234b-2+beluga1_all.deb
+Size: 119824
+MD5sum: ebb8fe59882aed8b3c1e33055db1eee3
+SHA1: fdd4870054adefcdd070ab610b6996d7cbc664be
+SHA256: 44631d47310b0275039ad4896643828f6d362a30ee025acc82645f8ec6443d34
+SHA512: 7641213f47511784098678c54b162fcac79b0d1f4d8678321eccbb190bf8bab8fb6bd5396893729dac64f0e895af5e094f387fa03d3e911ceacba551fb9d2a02
+Homepage: https://github.com/sddm/sddm
+Description: 'Maya' theme for SDDM X11 display manager
+ Maya theme for SDDM
+
+Package: sddm
+Architecture: amd64
+Version: 0.21.0+git20250502.4fe234b-2+beluga1
+Priority: optional
+Section: kde
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 2472
+Provides: x-display-manager
+Depends: adduser, qml6-module-qtqml-workerscript, x11-common, xauth, xkb-data, xserver-xorg | xserver, debconf (>= 0.5) | debconf-2.0, qml6-module-qtquick, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libpam0g (>= 0.99.7.1), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6network6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libstdc++6 (>= 13.1), libsystemd0, libxau6 (>= 1:1.0.11), libxcb-xkb1, libxcb1
+Recommends: libpam-systemd, sddm-theme-debian-breeze | sddm-theme
+Suggests: libpam-kwallet5
+Breaks: sddm-theme-breeze (<< 4:6.0.0~)
+Filename: pool/main/sddm_0.21.0+git20250502.4fe234b-2+beluga1_amd64.deb
+Size: 833804
+MD5sum: 93f793243fe95bb1c3b698ac6780e1d1
+SHA1: 5a6463ceb0a2a69c1722976ea2333dcfff3cc07a
+SHA256: ca872a8779c4a7af25b6b570db5dee0c5754bcc281f6c09e45f8b89b0c85216e
+SHA512: 89e855bbc9f3c1033eaf3bab4269980867f6b63c96ca6f9c46297fb3476661072d65ded0bc1a65f9c7eef4de1d54d23a0153ada40086b24970ab153f1d4394af
+Homepage: https://github.com/sddm/sddm
+Description: modern display manager for X11
+ SDDM is a modern display manager for X11 aiming to be fast, simple
+ and beautiful. It uses modern technologies like QtQuick to create
+ smooth, animated user interfaces.
 
