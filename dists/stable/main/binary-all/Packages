@@ -1,6 +1,6 @@
 Package: base-files
 Architecture: amd64
-Version: 13.8+deb13u7+beluga1
+Version: 13.8+deb13u7+beluga2
 Multi-Arch: foreign
 Priority: required
 Essential: yes
@@ -11,12 +11,12 @@ Provides: base, usr-is-merged
 Pre-Depends: awk
 Breaks: debian-security-support (<< 2019.04.25), initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
 Replaces: base, dpkg (<= 1.15.0), miscutils
-Filename: pool/main/base-files_13.8+deb13u7+beluga1_amd64.deb
-Size: 88352
-MD5sum: 397fa145055d24e6486930fac31e5941
-SHA1: 84b721b536776980acdae2a706e7dc938cb8abc1
-SHA256: e3c8676f56a2a951854a9cc86ac6bf90557e17d4900c23fa295073aea8bfe1a5
-SHA512: 390552e7019f866861e36b4ebdf8defbf847072796c2ebb49f91b1cbe2ae60a31ad805c5bc8cb31c728ec121c5497d9fd5e50c018e7141c133ea666777edd130
+Filename: pool/main/base-files_13.8+deb13u7+beluga2_amd64.deb
+Size: 88320
+MD5sum: 1fe327afd8d960759809fec5128248e2
+SHA1: 1080debf14169da4929dd3a7d24515a289b9d532
+SHA256: 728da2d51408899686498907d2d18d81c63f5db1522f64c1719567ac6e6d7e5d
+SHA512: b9e3f01cac0d84dc63806d2a3e742c3b032cf8eaed8867bd663cde32361e60e04a199831f19c0959095fc20a1ae34f8c46ec976270c14ff5c328cef605a6d536
 Description: Debian base system miscellaneous files
  This package contains the basic filesystem hierarchy of a Debian system, and
  several important miscellaneous files, such as /etc/debian_version,
@@ -25,20 +25,20 @@ Description: Debian base system miscellaneous files
 
 Package: beluga-desktop
 Architecture: amd64
-Version: 1.0.1
+Version: 1.2.1
 Priority: optional
 Section: x11
 Maintainer: Beluga OS <yeseonglee2013@gmail.com>
-Installed-Size: 1209
-Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), liblayershellqtinterface6 (>= 6.1.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libstdc++6 (>= 14), qml6-module-qtquick, qml6-module-qtquick-window, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtquick-effects, qml6-module-qtquick-particles, qml6-module-qtmultimedia, qml6-module-qtqml-workerscript, wireplumber, xdg-utils
-Breaks: beluga-os (<< 9.2.4)
-Replaces: beluga-os (<< 9.2.4)
-Filename: pool/main/beluga-desktop_1.0.1_amd64.deb
-Size: 279348
-MD5sum: 7c9126733d55afc400aff71d0f0ab13b
-SHA1: a660704d829ed44dadcd7b392f4f867e7ca37b60
-SHA256: fd15c5d0d973c9ea2e466d6183015ceb0ba4418a2b5e3635bd8ff7fd789e28f1
-SHA512: 80badbf9a9ee8e3a7fd112bb8df8481b27df5107a843da735097e39f599e6670f07b9533297e368c4e64d9e12bac47aea7575c7e987b75928f852c847c57af8d
+Installed-Size: 2092
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), liblayershellqtinterface6 (>= 6.1.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6network6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libstdc++6 (>= 14), qml6-module-qtquick, qml6-module-qtquick-window, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtquick-effects, qml6-module-qtquick-particles, qml6-module-qtmultimedia, qml6-module-qtqml-workerscript, qml6-module-qtquick-dialogs, parted, rsync, dosfstools, e2fsprogs, wireplumber, xdg-utils
+Breaks: beluga-os (<< 9.2.6)
+Replaces: beluga-os (<< 9.2.6)
+Filename: pool/main/beluga-desktop_1.2.1_amd64.deb
+Size: 521532
+MD5sum: f42611b1de30435381d7f5b538fbdf08
+SHA1: e8dc3b07c43e37bca670964dd52b177671a06a6d
+SHA256: 73634e9ae5a34c67f5b5448bcee6c46c699ea03b69607c16ed54064e9fae7a96
+SHA512: 926f8fd2e4e28f9c7cb6b088b5dcf65f6d24df8385be6eb5eca9d8ca5db2b7405625f1aa2b57b63ef785aec8e72b24c33e074feacd1133cf9ce1674b1fc9b7fd
 Description: Beluga OS desktop shell (top bar, dock, desktop, notifications)
  Beluga's own desktop shell replacing plasmashell: desktop with live wallpaper,
  top bar with tray/network/volume/battery/clock, dock, notifications and the
@@ -46,18 +46,18 @@ Description: Beluga OS desktop shell (top bar, dock, desktop, notifications)
 
 Package: beluga-os
 Architecture: all
-Version: 9.2.4
+Version: 9.2.7
 Priority: optional
 Section: misc
 Maintainer: Beluga OS <yeseonglee2013@gmail.com>
-Depends: plymouth (>= 24.004.60-5+beluga1), kwin-style-breeze (>= 4:6.3.5-1+beluga1), breeze (>= 4:6.3.5-1+beluga1), libkf6xmlgui6 (>= 6.13.0-1+beluga1), plasma-workspace (>= 4:6.3.6-2+beluga1), plasma-workspace-data (>= 4:6.3.6-2+beluga1), plasma-desktop-data (>= 4:6.3.6-1+beluga1), desktop-base (>= 13.0.4+beluga1), base-files (>= 13.8+deb13u7+beluga1), im-config (>= 0.57-2+beluga1), sddm (>= 0.21.0+git20250502.4fe234b-2+beluga1), plasma-discover (>= 6.3.6-1+beluga1), dolphin (>= 4:25.04.3-1+deb13u1+beluga1), beluga-desktop (>= 1.0.0), flatpak, initramfs-tools, kwin-common (>= 4:6.3.6-1+beluga1), kwin-wayland (>= 4:6.3.6-1+beluga1), mpv, avahi-utils, librsvg2-bin, python3-psutil, python3-aiohttp, python3-pyside6.qtquick, python3-pyside6.qtnetwork, python3-pyside6.qtqml, python3-pyside6.qtgui, qml6-module-qtquick-controls, qml6-module-qtquick-window, qml6-module-qtquick-layouts, qml6-module-qtquick-dialogs, qml6-module-qtmultimedia, qml6-module-qtquick-particles, qml6-module-qtquick-effects, dialog, alsa-utils
+Depends: plymouth (>= 24.004.60-5+beluga1), kwin-style-breeze (>= 4:6.3.5-1+beluga1), breeze (>= 4:6.3.5-1+beluga1), libkf6xmlgui6 (>= 6.13.0-1+beluga1), plasma-workspace (>= 4:6.3.6-2+beluga1), plasma-workspace-data (>= 4:6.3.6-2+beluga1), plasma-desktop-data (>= 4:6.3.6-1+beluga1), desktop-base (>= 13.0.4+beluga1), base-files (>= 13.8+deb13u7+beluga2), im-config (>= 0.57-2+beluga1), sddm (>= 0.21.0+git20250502.4fe234b-2+beluga1), plasma-discover (>= 6.3.6-1+beluga1), dolphin (>= 4:25.04.3-1+deb13u1+beluga1), beluga-desktop (>= 1.2.1), systemsettings (>= 4:6.3.4-2+beluga1), flatpak, initramfs-tools, kwin-common (>= 4:6.3.6-1+beluga1), kwin-wayland (>= 4:6.3.6-1+beluga1), mpv, avahi-utils, librsvg2-bin, python3-psutil, python3-aiohttp, python3-pyside6.qtquick, python3-pyside6.qtnetwork, python3-pyside6.qtqml, python3-pyside6.qtgui, qml6-module-qtquick-controls, qml6-module-qtquick-window, qml6-module-qtquick-layouts, qml6-module-qtquick-dialogs, qml6-module-qtmultimedia, qml6-module-qtquick-particles, qml6-module-qtquick-effects, dialog, alsa-utils
 Recommends: pipewire-bin
-Filename: pool/main/beluga-os_9.2.4_all.deb
-Size: 31737968
-MD5sum: f9b93e1a2c6c5b33006779cedc190ab5
-SHA1: f4984fa06ec6421d61084e2efa83d4051240dc87
-SHA256: 5f17543f7ff15543a27e826430a99d2eea46c8288a445f7ecf6913a16c530308
-SHA512: e39cbb285c0a36d36057259ad7fdc5245f96fb1f892c42099de9d43818cca9a6bb1bbf13f48aea057c9ee501113314a0e21cf20b982169e147655cadf92d61cc
+Filename: pool/main/beluga-os_9.2.7_all.deb
+Size: 31483520
+MD5sum: 3b02ca95ef48ddd6cc6781d2b54bcb45
+SHA1: e1346622e098a2115a70871318d04d0db2a6ddd9
+SHA256: af1e31d106288e43dc9ae0b88f5df01417d1b5f66c8b7bbf7957af26db94a45e
+SHA512: 398b3947ddba0019cdcac0711d21213a71e19beb8c933a141ff235491c3a15ce28771c6fcdaf33a2074de9665bd1e07684375c61aac94149a07979a643fcb417
 Description: Beluga OS branding, settings and update channel
  Beluga boot logo, wallpaper, startup sound, Korean defaults,
  developer defaults, installer branding and the Beluga update repository.
@@ -162,11 +162,11 @@ Installed-Size: 225
 Provides: calamares-settings
 Depends: calamares, rsync, cryptsetup, libglib2.0-bin, keyutils, pkexec, qml-module-qtquick-window2, qml-module-qtquick2, dconf-gsettings-backend | gsettings-backend
 Filename: pool/main/calamares-settings-debian_13.0.13-1+beluga1_all.deb
-Size: 130008
-MD5sum: e75e755e47750c324038745a4197eec6
-SHA1: f62cbe0e6fde116713c325b4cad4dd3bde161706
-SHA256: c7e39758c82bfe1a2392af3bcbe9f6eb1c692c393612b7a0c9ce8a905f17d4b5
-SHA512: 35408dff7756e5b83a76a32a31703a2eae68f37c3f4ce54561b197dfd15b655e6442fdc42d644476e76509fc52e7407a999b5f1f2818cdd85312ebeec4eb7426
+Size: 129972
+MD5sum: 9da78b97d2e247cbc330246b5b11fc9e
+SHA1: 27a8a5803778a33db4e841bf6a5a42dfb26fb431
+SHA256: a961789d127ad44703dd999d5cee795ff2f639ba73ca895983b7fdec74fd72dd
+SHA512: 0d38d595c9978cd00b50047045b8af0d234491c14a634503bba0eb1ce6b62bbcfaf5d344d64926cf36b8e6feddf2e3e662aaefe92a293ffac9f8fd00d7fdc87b
 Homepage: https://salsa.debian.org/live-team/calamares-settings-debian
 Description: Debian theme and settings for the Calamares Installer
  Calamares is a generic installer framework for Linux distributions.
@@ -218,11 +218,11 @@ Depends: librsvg2-common, fonts-quicksand
 Recommends: plymouth-label
 Suggests: gnome | kde-standard | xfce4 | wmaker
 Filename: pool/main/desktop-base_13.0.4+beluga1_all.deb
-Size: 9965824
-MD5sum: 45ef136f05c156e80648f08f72b7eaa6
-SHA1: d877eed8a91ce18b060bf92da4b57b72e26014a7
-SHA256: 482d5d4c1877451a085efc1b959eb171d7111143c87b3ea1de5a787565059cce
-SHA512: 788bb40926880920ed67531a1e557e928c5f489621c158a6fd67a88dc8b9fe61b1dedac81a1f02703098c8029fe2d957fc32fe76f0628e0d43069f7a406bd4ba
+Size: 9965720
+MD5sum: 98bfe68217a53b3393ff54dc442c0f24
+SHA1: 2e07216abec28698a09b63d879ba87be32909a70
+SHA256: 1dbd6584cabf2fe2c23cb9b9441fe58ce576a544f79990744f21eb583c224575
+SHA512: f27575ac646e36aa754f8c8bf51a7667bc90f3c1b560fb692767da013c78fbb9aee295c04cef7bc3ada02f0cf50195b9dc216e647aa4988dd973cdf20d8448fc
 Homepage: https://www.debian.org/devel/debian-desktop/
 Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by
@@ -1787,4 +1787,26 @@ Description: modern display manager for X11
  SDDM is a modern display manager for X11 aiming to be fast, simple
  and beautiful. It uses modern technologies like QtQuick to create
  smooth, animated user interfaces.
+
+Package: systemsettings
+Architecture: amd64
+Version: 4:6.3.4-2+beluga1
+Priority: optional
+Section: kde
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Installed-Size: 1453
+Depends: qml6-module-org-kde-kirigami, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, kio6, libc6 (>= 2.38), libkf6authcore6 (>= 6.10.0~), libkf6colorscheme6 (>= 6.0.0), libkf6configcore6 (>= 6.10.0~), libkf6configwidgets6 (>= 6.0.0), libkf6coreaddons6 (>= 6.0.0), libkf6crash6 (>= 6.10.0~), libkf6dbusaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6i18nqml6 (>= 6.10.0~), libkf6itemmodels6 (>= 6.10.0~), libkf6itemviews6 (>= 6.10.0~), libkf6jobwidgets6 (>= 6.10.0~), libkf6kcmutils6 (>= 6.10.0~), libkf6kcmutilscore6 (>= 6.10.0~), libkf6kiocore6 (>= 6.10.0~), libkf6kiogui6 (>= 6.10.0~), libkf6runner6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6widgetsaddons6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkf6xmlgui6 (>= 6.10.0), libplasmaactivities6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6quickwidgets6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 13.1)
+Breaks: kde-config-systemd (<< 1.2.1-3.1~)
+Replaces: kde-config-systemd (<< 1.2.1-3.1~)
+Filename: pool/main/systemsettings_6.3.4-2+beluga1_amd64.deb
+Size: 347008
+MD5sum: 4a6e12706f54c5d5c603c3c0a3808f29
+SHA1: 38f842baf465ac661e78efbdb78f871b6a59262a
+SHA256: 909489aa66abc095e3dfe99d37b8fd382ea723ade115622730ecfb2d47c7304b
+SHA512: 71877f6992bfb19e41a58f75f3c23823ffe26d1e5e34129a17ce741bf3c462829924abf4a0e88afb37b71cec286cee9a87e9696bbf9f678c099a29e178b24550
+Homepage: https://invent.kde.org/plasma/systemsettings
+Description: System Settings interface
+ Desktop configuration application.
+ .
+ This package is part of the KDE base workspace module.
 
