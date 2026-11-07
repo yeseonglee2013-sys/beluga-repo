@@ -25,20 +25,20 @@ Description: Debian base system miscellaneous files
 
 Package: beluga-desktop
 Architecture: amd64
-Version: 1.3.0
+Version: 1.3.1
 Priority: optional
 Section: x11
 Maintainer: Beluga OS <yeseonglee2013@gmail.com>
-Installed-Size: 2664
+Installed-Size: 2689
 Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libkf6coreaddons6 (>= 6.0.0), libkf6kcmutilscore6 (>= 6.0.0), libkf6kcmutilsquick6 (>= 6.0.0), liblayershellqtinterface6 (>= 6.1.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6network6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libstdc++6 (>= 14), qml6-module-qtquick, qml6-module-qtquick-window, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtquick-effects, qml6-module-qtquick-particles, qml6-module-qtmultimedia, qml6-module-qtqml-workerscript, qml6-module-qtquick-dialogs, qml6-module-org-kde-kcmutils, parted, rsync, dosfstools, e2fsprogs, wireplumber, xdg-utils
 Breaks: beluga-os (<< 9.2.6)
 Replaces: beluga-os (<< 9.2.6)
-Filename: pool/main/beluga-desktop_1.3.0_amd64.deb
-Size: 571588
-MD5sum: 19561c0c36800585619ec7941829fb04
-SHA1: 95753f50a2635345891ca7a8ae50d48115d16ef4
-SHA256: c069b7160802318839031ff96b03f505c08e584929bde2b74ad642f9919161ff
-SHA512: 309db5b04cabdc48df2d7fc9f9303bd2e986e8344ff147df66e82b8207090352a25ff6d79f841d47715e0df52508e9bd4136df84f0b4cd72ef6ecd35f2a66548
+Filename: pool/main/beluga-desktop_1.3.1_amd64.deb
+Size: 576672
+MD5sum: 37334e8fd601118131771ca13d3fc821
+SHA1: b68f453c2b23cec0855c2b5d0ad0f329432f4125
+SHA256: 70788b09e15bb929c8203cf8a91f105fb527bdcd4488b47a1ce4bad1c80698d6
+SHA512: 951b106fefb94f02076763d454a5df59aee55769e83c76dc11c4ab45f44d810a27b7c43710137b10a31159e14a9206178f04f8f38e1cb23e2d45f0ab44f5e301
 Description: Beluga OS desktop shell (top bar, dock, desktop, notifications)
  Beluga's own desktop shell replacing plasmashell: desktop with live wallpaper,
  top bar with tray/network/volume/battery/clock, dock, notifications and the
@@ -46,18 +46,18 @@ Description: Beluga OS desktop shell (top bar, dock, desktop, notifications)
 
 Package: beluga-os
 Architecture: all
-Version: 9.2.8
+Version: 9.2.9
 Priority: optional
 Section: misc
 Maintainer: Beluga OS <yeseonglee2013@gmail.com>
-Depends: plymouth (>= 24.004.60-5+beluga1), kwin-style-breeze (>= 4:6.3.5-1+beluga1), breeze (>= 4:6.3.5-1+beluga1), libkf6xmlgui6 (>= 6.13.0-1+beluga1), plasma-workspace (>= 4:6.3.6-2+beluga1), plasma-workspace-data (>= 4:6.3.6-2+beluga1), plasma-desktop-data (>= 4:6.3.6-1+beluga1), desktop-base (>= 13.0.4+beluga1), base-files (>= 13.8+deb13u7+beluga2), im-config (>= 0.57-2+beluga1), sddm (>= 0.21.0+git20250502.4fe234b-2+beluga1), plasma-discover (>= 6.3.6-1+beluga1), dolphin (>= 4:25.04.3-1+deb13u1+beluga1), beluga-desktop (>= 1.3.0), systemsettings (>= 4:6.3.4-2+beluga1), flatpak, initramfs-tools, kwin-common (>= 4:6.3.6-1+beluga2), kwin-wayland (>= 4:6.3.6-1+beluga2), mpv, avahi-utils, librsvg2-bin, python3-psutil, python3-aiohttp, python3-pyside6.qtquick, python3-pyside6.qtnetwork, python3-pyside6.qtqml, python3-pyside6.qtgui, qml6-module-qtquick-controls, qml6-module-qtquick-window, qml6-module-qtquick-layouts, qml6-module-qtquick-dialogs, qml6-module-qtmultimedia, qml6-module-qtquick-particles, qml6-module-qtquick-effects, dialog, alsa-utils
+Depends: plymouth (>= 24.004.60-5+beluga1), kwin-style-breeze (>= 4:6.3.5-1+beluga1), breeze (>= 4:6.3.5-1+beluga1), libkf6xmlgui6 (>= 6.13.0-1+beluga1), plasma-workspace (>= 4:6.3.6-2+beluga1), plasma-workspace-data (>= 4:6.3.6-2+beluga1), plasma-desktop-data (>= 4:6.3.6-1+beluga1), desktop-base (>= 13.0.4+beluga1), base-files (>= 13.8+deb13u7+beluga2), im-config (>= 0.57-2+beluga1), sddm (>= 0.21.0+git20250502.4fe234b-2+beluga1), plasma-discover (>= 6.3.6-1+beluga1), dolphin (>= 4:25.04.3-1+deb13u1+beluga1), beluga-desktop (>= 1.3.1), systemsettings (>= 4:6.3.4-2+beluga1), flatpak, initramfs-tools, kwin-common (>= 4:6.3.6-1+beluga2), kwin-wayland (>= 4:6.3.6-1+beluga2), mpv, avahi-utils, librsvg2-bin, python3-psutil, python3-aiohttp, python3-pyside6.qtquick, python3-pyside6.qtnetwork, python3-pyside6.qtqml, python3-pyside6.qtgui, qml6-module-qtquick-controls, qml6-module-qtquick-window, qml6-module-qtquick-layouts, qml6-module-qtquick-dialogs, qml6-module-qtmultimedia, qml6-module-qtquick-particles, qml6-module-qtquick-effects, dialog, alsa-utils
 Recommends: pipewire-bin
-Filename: pool/main/beluga-os_9.2.8_all.deb
-Size: 31494308
-MD5sum: 474a52440e84e453b972e90a1ae564e1
-SHA1: d83a8515b75c1e60406c2142d0140297d11bb984
-SHA256: d2ab5044f4b78dc7e2cbe036f61b032a0f3dbae90cdae931582c00679f43d3fe
-SHA512: bccf2b619a41df45af11385e4f8a54d93f8474e13287a911211109bec9ed42a3e8b1b69f8ca71cc05f27071a288b24623a9d3c8afc631b0d1f734d0e184f01cf
+Filename: pool/main/beluga-os_9.2.9_all.deb
+Size: 31482948
+MD5sum: 91c07e28e4e363f1f2b5421a59140149
+SHA1: 073b867f195de2d373e1b1d1a7f43ad3e57379d3
+SHA256: b12db9db92e849715a11ad7f2a69224f19f3e716cf3534bfb4917730309945d0
+SHA512: d7352c905a0c90c6d2101b56184c5e0db5c212ed108ffe09f0f69a1b95458cbb1c0d4f13171d694267bbcd7aeb6a628c9082cf8eb96f95be675b4cf24bd9c798
 Description: Beluga OS branding, settings and update channel
  Beluga boot logo, wallpaper, startup sound, Korean defaults,
  developer defaults, installer branding and the Beluga update repository.
