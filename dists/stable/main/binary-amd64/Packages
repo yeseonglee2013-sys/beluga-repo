@@ -25,20 +25,20 @@ Description: Debian base system miscellaneous files
 
 Package: beluga-desktop
 Architecture: amd64
-Version: 1.2.1
+Version: 1.3.0
 Priority: optional
 Section: x11
 Maintainer: Beluga OS <yeseonglee2013@gmail.com>
-Installed-Size: 2092
-Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), liblayershellqtinterface6 (>= 6.1.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6network6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libstdc++6 (>= 14), qml6-module-qtquick, qml6-module-qtquick-window, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtquick-effects, qml6-module-qtquick-particles, qml6-module-qtmultimedia, qml6-module-qtqml-workerscript, qml6-module-qtquick-dialogs, parted, rsync, dosfstools, e2fsprogs, wireplumber, xdg-utils
+Installed-Size: 2664
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libkf6coreaddons6 (>= 6.0.0), libkf6kcmutilscore6 (>= 6.0.0), libkf6kcmutilsquick6 (>= 6.0.0), liblayershellqtinterface6 (>= 6.1.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6network6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libstdc++6 (>= 14), qml6-module-qtquick, qml6-module-qtquick-window, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtquick-effects, qml6-module-qtquick-particles, qml6-module-qtmultimedia, qml6-module-qtqml-workerscript, qml6-module-qtquick-dialogs, qml6-module-org-kde-kcmutils, parted, rsync, dosfstools, e2fsprogs, wireplumber, xdg-utils
 Breaks: beluga-os (<< 9.2.6)
 Replaces: beluga-os (<< 9.2.6)
-Filename: pool/main/beluga-desktop_1.2.1_amd64.deb
-Size: 521532
-MD5sum: f42611b1de30435381d7f5b538fbdf08
-SHA1: e8dc3b07c43e37bca670964dd52b177671a06a6d
-SHA256: 73634e9ae5a34c67f5b5448bcee6c46c699ea03b69607c16ed54064e9fae7a96
-SHA512: 926f8fd2e4e28f9c7cb6b088b5dcf65f6d24df8385be6eb5eca9d8ca5db2b7405625f1aa2b57b63ef785aec8e72b24c33e074feacd1133cf9ce1674b1fc9b7fd
+Filename: pool/main/beluga-desktop_1.3.0_amd64.deb
+Size: 571588
+MD5sum: 19561c0c36800585619ec7941829fb04
+SHA1: 95753f50a2635345891ca7a8ae50d48115d16ef4
+SHA256: c069b7160802318839031ff96b03f505c08e584929bde2b74ad642f9919161ff
+SHA512: 309db5b04cabdc48df2d7fc9f9303bd2e986e8344ff147df66e82b8207090352a25ff6d79f841d47715e0df52508e9bd4136df84f0b4cd72ef6ecd35f2a66548
 Description: Beluga OS desktop shell (top bar, dock, desktop, notifications)
  Beluga's own desktop shell replacing plasmashell: desktop with live wallpaper,
  top bar with tray/network/volume/battery/clock, dock, notifications and the
@@ -46,18 +46,18 @@ Description: Beluga OS desktop shell (top bar, dock, desktop, notifications)
 
 Package: beluga-os
 Architecture: all
-Version: 9.2.7
+Version: 9.2.8
 Priority: optional
 Section: misc
 Maintainer: Beluga OS <yeseonglee2013@gmail.com>
-Depends: plymouth (>= 24.004.60-5+beluga1), kwin-style-breeze (>= 4:6.3.5-1+beluga1), breeze (>= 4:6.3.5-1+beluga1), libkf6xmlgui6 (>= 6.13.0-1+beluga1), plasma-workspace (>= 4:6.3.6-2+beluga1), plasma-workspace-data (>= 4:6.3.6-2+beluga1), plasma-desktop-data (>= 4:6.3.6-1+beluga1), desktop-base (>= 13.0.4+beluga1), base-files (>= 13.8+deb13u7+beluga2), im-config (>= 0.57-2+beluga1), sddm (>= 0.21.0+git20250502.4fe234b-2+beluga1), plasma-discover (>= 6.3.6-1+beluga1), dolphin (>= 4:25.04.3-1+deb13u1+beluga1), beluga-desktop (>= 1.2.1), systemsettings (>= 4:6.3.4-2+beluga1), flatpak, initramfs-tools, kwin-common (>= 4:6.3.6-1+beluga1), kwin-wayland (>= 4:6.3.6-1+beluga1), mpv, avahi-utils, librsvg2-bin, python3-psutil, python3-aiohttp, python3-pyside6.qtquick, python3-pyside6.qtnetwork, python3-pyside6.qtqml, python3-pyside6.qtgui, qml6-module-qtquick-controls, qml6-module-qtquick-window, qml6-module-qtquick-layouts, qml6-module-qtquick-dialogs, qml6-module-qtmultimedia, qml6-module-qtquick-particles, qml6-module-qtquick-effects, dialog, alsa-utils
+Depends: plymouth (>= 24.004.60-5+beluga1), kwin-style-breeze (>= 4:6.3.5-1+beluga1), breeze (>= 4:6.3.5-1+beluga1), libkf6xmlgui6 (>= 6.13.0-1+beluga1), plasma-workspace (>= 4:6.3.6-2+beluga1), plasma-workspace-data (>= 4:6.3.6-2+beluga1), plasma-desktop-data (>= 4:6.3.6-1+beluga1), desktop-base (>= 13.0.4+beluga1), base-files (>= 13.8+deb13u7+beluga2), im-config (>= 0.57-2+beluga1), sddm (>= 0.21.0+git20250502.4fe234b-2+beluga1), plasma-discover (>= 6.3.6-1+beluga1), dolphin (>= 4:25.04.3-1+deb13u1+beluga1), beluga-desktop (>= 1.3.0), systemsettings (>= 4:6.3.4-2+beluga1), flatpak, initramfs-tools, kwin-common (>= 4:6.3.6-1+beluga2), kwin-wayland (>= 4:6.3.6-1+beluga2), mpv, avahi-utils, librsvg2-bin, python3-psutil, python3-aiohttp, python3-pyside6.qtquick, python3-pyside6.qtnetwork, python3-pyside6.qtqml, python3-pyside6.qtgui, qml6-module-qtquick-controls, qml6-module-qtquick-window, qml6-module-qtquick-layouts, qml6-module-qtquick-dialogs, qml6-module-qtmultimedia, qml6-module-qtquick-particles, qml6-module-qtquick-effects, dialog, alsa-utils
 Recommends: pipewire-bin
-Filename: pool/main/beluga-os_9.2.7_all.deb
-Size: 31483520
-MD5sum: 3b02ca95ef48ddd6cc6781d2b54bcb45
-SHA1: e1346622e098a2115a70871318d04d0db2a6ddd9
-SHA256: af1e31d106288e43dc9ae0b88f5df01417d1b5f66c8b7bbf7957af26db94a45e
-SHA512: 398b3947ddba0019cdcac0711d21213a71e19beb8c933a141ff235491c3a15ce28771c6fcdaf33a2074de9665bd1e07684375c61aac94149a07979a643fcb417
+Filename: pool/main/beluga-os_9.2.8_all.deb
+Size: 31494308
+MD5sum: 474a52440e84e453b972e90a1ae564e1
+SHA1: d83a8515b75c1e60406c2142d0140297d11bb984
+SHA256: d2ab5044f4b78dc7e2cbe036f61b032a0f3dbae90cdae931582c00679f43d3fe
+SHA512: bccf2b619a41df45af11385e4f8a54d93f8474e13287a911211109bec9ed42a3e8b1b69f8ca71cc05f27071a288b24623a9d3c8afc631b0d1f734d0e184f01cf
 Description: Beluga OS branding, settings and update channel
  Beluga boot logo, wallpaper, startup sound, Korean defaults,
  developer defaults, installer branding and the Beluga update repository.
@@ -467,23 +467,23 @@ Description: Widget style for Qt and KDE Software
 
 Package: kwin-common
 Architecture: amd64
-Version: 4:6.3.6-1+beluga1
+Version: 4:6.3.6-1+beluga2
 Priority: optional
 Section: kde
 Source: kwin
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Installed-Size: 5583
-Depends: kglobalacceld, kwin-data (= 4:6.3.6-1+beluga1), plasma-desktoptheme, pnp.ids, qml6-module-org-kde-kirigami, qml6-module-org-kde-ksvg, qml6-module-qt5compat-graphicaleffects, qml6-module-qtquick, qml6-module-qtquick-window, libc6 (>= 2.38), libeis1 (>= 1.0.0), libepoxy0 (>= 1.0), libkdecorations3-6 (>= 4:6.3.4~), libkdecorations3private2 (>= 4:6.3.4~), libkf6authcore6 (>= 6.10.0~), libkf6colorscheme6 (>= 6.10.0~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6guiaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6kcmutils6 (>= 6.10.0~), libkf6kcmutilscore6 (>= 6.10.0~), libkf6kcmutilsquick6 (>= 6.10.0~), libkf6newstuffcore6 (>= 6.10.0~), libkf6newstuffwidgets6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6package6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6widgetsaddons6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkf6xmlgui6 (>= 6.10.0), libkwin6 (>= 4:6.3.6), libpipewire-0.3-0t64 (>= 0.3.29), libplasmaactivities6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.8.2), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6uitools6 (>= 6.7.0~), libqt6waylandclient6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 11), libwayland-client0 (>= 1.22~), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2), qt6-waylandclient-private-abi (= 6.8.2)
+Installed-Size: 5587
+Depends: kglobalacceld, kwin-data (= 4:6.3.6-1+beluga2), plasma-desktoptheme, pnp.ids, qml6-module-org-kde-kirigami, qml6-module-org-kde-ksvg, qml6-module-qt5compat-graphicaleffects, qml6-module-qtquick, qml6-module-qtquick-window, libc6 (>= 2.38), libeis1 (>= 1.0.0), libepoxy0 (>= 1.0), libkdecorations3-6 (>= 4:6.3.4~), libkdecorations3private2 (>= 4:6.3.4~), libkf6authcore6 (>= 6.10.0~), libkf6colorscheme6 (>= 6.10.0~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6guiaddons6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6kcmutils6 (>= 6.10.0~), libkf6kcmutilscore6 (>= 6.10.0~), libkf6kcmutilsquick6 (>= 6.10.0~), libkf6newstuffcore6 (>= 6.10.0~), libkf6newstuffwidgets6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6package6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6widgetsaddons6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkf6xmlgui6 (>= 6.10.0), libkwin6 (>= 4:6.3.6), libpipewire-0.3-0t64 (>= 0.3.29), libplasmaactivities6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.8.2), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6uitools6 (>= 6.7.0~), libqt6waylandclient6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 11), libwayland-client0 (>= 1.22~), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2), qt6-waylandclient-private-abi (= 6.8.2)
 Recommends: plasma-desktop (>= 4:6.2.90~)
 Suggests: kwin-addons (>= 4:6.2.90~)
 Breaks: kwin-data (<< 4:6.1.4-1)
 Replaces: kwin-data (<< 4:6.1.4-1)
-Filename: pool/main/kwin-common_6.3.6-1+beluga1_amd64.deb
-Size: 972112
-MD5sum: 2f90acafad39da1771f8643c578c80c0
-SHA1: fbb9365744403be2de7305925334a72e74e8aac5
-SHA256: 393daae2baaa468c46c9a0dc5b1e3996b687e34d9ece01e5eee93f5567290f76
-SHA512: cb23eb4087647ca82d3cf08859c8e26b2cd47e4308406120f80bebc4d1ba12c62582caf6b91dd44d471040a0476a5de627a91fd952634cfdeec0ad4b84c8b8f1
+Filename: pool/main/kwin-common_6.3.6-1+beluga2_amd64.deb
+Size: 974108
+MD5sum: 6cf511916abd3297ae82f1408b91c00d
+SHA1: f30d898b217c995d19ea62950ea33b2be42e7f6c
+SHA256: da5b15c88a2d8d4370eef7ed822be1a986318f6becf773a858fc1c598e9e62ca
+SHA512: 2e2a69268d28d256ff60c1fd4e2043aba1caf3b7d952e70ce9e3dfcdb7190b690c254aa675db3d306db606747cda54ef62aedb1e051ba19c14854adf502d4c27
 Homepage: https://projects.kde.org/projects/kde/workspace/kwin
 Description: KDE window manager, common files
  KWin (pronounced as one syllable "kwin") is the window
@@ -498,7 +498,7 @@ Description: KDE window manager, common files
 
 Package: kwin-data
 Architecture: all
-Version: 4:6.3.6-1+beluga1
+Version: 4:6.3.6-1+beluga2
 Multi-Arch: foreign
 Priority: optional
 Section: kde
@@ -508,12 +508,12 @@ Installed-Size: 16352
 Recommends: plasma-desktoptheme, qml6-module-org-kde-kirigami, qml6-module-org-kde-kitemmodels, qml6-module-org-kde-kquickcontrolsaddons, qml6-module-org-kde-ksvg, qml6-module-org-kde-quickcharts, qml6-module-qt5compat-graphicaleffects, qml6-module-qtmultimedia, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-window, systemsettings
 Breaks: kwin-addons (<< 4:6.0.0~)
 Replaces: kwin-addons (<< 4:6.0.0~)
-Filename: pool/main/kwin-data_6.3.6-1+beluga1_all.deb
-Size: 6747312
-MD5sum: 0fd8365b3dc3adc7ed89bba31ea7e9c6
-SHA1: 407a95645fe4247d75e13e198fa6285a27b3a29a
-SHA256: 01e1cc182ffeb7584081a141b7141b71b44c9a50e7b6c9b969157323f708ce8e
-SHA512: 26b95fc8363e69cfa68618c986ae22960becd21db4242587c7059158fda58dc49c4c17c7b99f2d2c9f519f7149a9d0d60b3a57740d4fafd49d4aebf484c4bddf
+Filename: pool/main/kwin-data_6.3.6-1+beluga2_all.deb
+Size: 6747480
+MD5sum: dcbe72349e9c49df68498e29983ac1b5
+SHA1: 91e396f93457447144eee22c531200f6e4f24c57
+SHA256: 19918d526e58d36a692f17c754338ee4afe250844a149b655317416f5839c631
+SHA512: 06c92d698f450c2d1a9ef80cf47e3090b9c37922658815f00ead67d607aeafa8a013b8d636356c64573a5ae7bd770f2783e3f979997d20638b75dda1a3ae14cc
 Homepage: https://projects.kde.org/projects/kde/workspace/kwin
 Description: KDE window manager data files
  KWin (pronounced as one syllable "kwin") is the window
@@ -528,19 +528,19 @@ Description: KDE window manager data files
 
 Package: kwin-dev
 Architecture: amd64
-Version: 4:6.3.6-1+beluga1
+Version: 4:6.3.6-1+beluga2
 Priority: optional
 Section: libdevel
 Source: kwin
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Installed-Size: 1619
-Depends: kwin-common (= 4:6.3.6-1+beluga1), libepoxy-dev (>= 1.3), libkf6config-dev (>= 6.10.0~), libkf6coreaddons-dev (>= 6.10.0~), libkf6windowsystem-dev (>= 6.10.0~), libkwin6 (= 4:6.3.6-1+beluga1), qt6-base-dev (>= 6.7.0~), qt6-declarative-dev (>= 6.7.0~)
-Filename: pool/main/kwin-dev_6.3.6-1+beluga1_amd64.deb
-Size: 244080
-MD5sum: 5b1fc6247ea8c115f01fc79f296f1c71
-SHA1: baa1ade9a0fa31026b6321fef8bf66d606c976cb
-SHA256: f1966fdd8c35795b5e54bd1fefc22ee6fd116ce9cc42049cb74b3481695fa4b4
-SHA512: c58e7dc57c7bee01b483c02897acd98b08d76baa145b7df4b4bb60958cb02ab9614c35553e805290d9081c52592763e0a6f7ac3d29dceb996b4ed0b38c05e62b
+Depends: kwin-common (= 4:6.3.6-1+beluga2), libepoxy-dev (>= 1.3), libkf6config-dev (>= 6.10.0~), libkf6coreaddons-dev (>= 6.10.0~), libkf6windowsystem-dev (>= 6.10.0~), libkwin6 (= 4:6.3.6-1+beluga2), qt6-base-dev (>= 6.7.0~), qt6-declarative-dev (>= 6.7.0~)
+Filename: pool/main/kwin-dev_6.3.6-1+beluga2_amd64.deb
+Size: 244196
+MD5sum: 6b283497fbbf2b8463b3aae0cc5ec8cd
+SHA1: 97120a9074f5ddb4a22297e601befb89ba739b88
+SHA256: e7bf81677ad80778ec729fa3ebb9f24d401a6a1cea5b42c81078931e64ff111c
+SHA512: 758ba276e1b243547d08ed1080f50d3387f885232d94f9054932bf83f6e92e079dbf219dfa92356d0281c240d2b70b102ecd4708712ac2a9b9065c527f775484
 Homepage: https://projects.kde.org/projects/kde/workspace/kwin
 Description: KDE window manager - devel files
  KWin (pronounced as one syllable "kwin") is the window
@@ -577,7 +577,7 @@ Description: KWin Breeze Style
 
 Package: kwin-wayland
 Architecture: amd64
-Version: 4:6.3.6-1+beluga1
+Version: 4:6.3.6-1+beluga2
 Priority: optional
 Section: kde
 Source: kwin
@@ -586,12 +586,12 @@ Installed-Size: 1799
 Provides: kwin
 Depends: libcap2-bin, xwayland, libc6 (>= 2.38), libcanberra0 (>= 0.2), libepoxy0 (>= 1.0), libkdecorations3-6 (>= 4:6.3.4~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6configwidgets6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6dbusaddons6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6idletime6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkglobalacceld0 (>= 6.3.4~), libkwin6 (>= 4:6.3.6), libqaccessibilityclient-qt6-0 (>= 0.6.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 13.1), libsystemd0 (>= 214), libxcb-composite0, libxcb-randr0 (>= 1.3), libxcb-xfixes0, libxcb1 (>= 1.8), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2)
 Recommends: xwaylandvideobridge
-Filename: pool/main/kwin-wayland_6.3.6-1+beluga1_amd64.deb
-Size: 471888
-MD5sum: 0dd9c0f14ab27749b498944d4a0a0970
-SHA1: d9e3289c2d88100220596c0ee0d85d5a535b4863
-SHA256: 2c492b6472c45e6905522b5263bf09b04148add78b3af43e92bd398d785c003a
-SHA512: e686e676de08047fc8e92cf6e8edf7b4db378a4a1e3abdced231a9f5217fdec934ae6440e15c7fb20f32608d218c45c733d47670e8a0344bec20106ed59127a4
+Filename: pool/main/kwin-wayland_6.3.6-1+beluga2_amd64.deb
+Size: 471348
+MD5sum: cab7669ebe8485c733e9785747541eeb
+SHA1: 4771b126c46cbe799a1a9dbaa4e16a9570fc8af4
+SHA256: bec76f1a7fc13d99685d2b622fb0979a85cc0aa4b4b83193a5f829ea65c140d5
+SHA512: cbe06e00fceeeec3b4ad53ef2db6d5ed3260ea81b20ed961a3b8c961b160debe9e03916dec24f87123e977e6397ea1a01f5ed77f89fdd62b952a71bad2109ba9
 Homepage: https://projects.kde.org/projects/kde/workspace/kwin
 Description: KDE window manager, Wayland version
  KWin (pronounced as one syllable "kwin") is the window
@@ -608,7 +608,7 @@ Description: KDE window manager, Wayland version
 
 Package: kwin-x11
 Architecture: amd64
-Version: 4:6.3.6-1+beluga1
+Version: 4:6.3.6-1+beluga2
 Priority: optional
 Section: kde
 Source: kwin
@@ -616,12 +616,12 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Installed-Size: 1688
 Provides: kwin, x-window-manager
 Depends: libc6 (>= 2.38), libcanberra0 (>= 0.2), libepoxy0 (>= 1.0), libgcc-s1 (>= 3.4), libkdecorations3-6 (>= 4:6.3.4~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6configwidgets6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6svg6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkwin6 (>= 4:6.3.6), libqaccessibilityclient-qt6-0 (>= 0.6.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.7.0~), libqt6gui6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 13.1), libx11-6, libxcb-composite0, libxcb-keysyms1 (>= 0.4.1), libxcb-randr0 (>= 1.3), libxcb-render0, libxcb-shape0, libxcb-xfixes0, libxcb-xkb1, libxcb1 (>= 1.6), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.7.0~), qt6-base-private-abi (= 6.8.2), qt6-declarative-private-abi (= 6.8.2)
-Filename: pool/main/kwin-x11_6.3.6-1+beluga1_amd64.deb
-Size: 456816
-MD5sum: 4cc0d4f32ca44abf24baa38c0c6bcda8
-SHA1: 55258c1d0f2da45263aeca1c30a90cbcfd552fac
-SHA256: 86b7fe8a01d52935e7503e82c327d215aeac26bdb18666849aa022003fb1b0fc
-SHA512: f867f0b984a5954ed054172164fb0ef0c8037e01cdc25f24350ab980a184714a6590402ea566002554e98fd98bc85522b09a761a8d9dd0a12d3cf734aa33b25c
+Filename: pool/main/kwin-x11_6.3.6-1+beluga2_amd64.deb
+Size: 458004
+MD5sum: 9a892fd40a2d8d3871a923ad3eb17113
+SHA1: e15c441e186f3017ac698a86156980c1cad3f6f7
+SHA256: c6b3e9b690bf4dcb78e7abeff52d9fe38fc6c581bd4945856062460934a644b6
+SHA512: cefc2b435e79ea754354a46924632c0e0e78e8b6017b57a5c540f1b4d15055541bf01b75c4169f085f596acf89fca2069e852b726bdf8b354bd529b2409d0161
 Homepage: https://projects.kde.org/projects/kde/workspace/kwin
 Description: KDE window manager, X11 version
  KWin (pronounced as one syllable "kwin") is the window
@@ -929,19 +929,19 @@ Description: Plasma Workspace MPRIS library
 
 Package: libkwin6
 Architecture: amd64
-Version: 4:6.3.6-1+beluga1
+Version: 4:6.3.6-1+beluga2
 Priority: optional
 Section: libs
 Source: kwin
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Installed-Size: 9573
 Depends: libc6 (>= 2.38), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.116), libepoxy0 (>= 1.3), libgbm1 (>= 21.1.0), libinput10 (>= 1.27.1), libkdecorations3-6 (>= 4:6.3.4~), libkdecorations3private2 (>= 4:6.3.4~), libkf6colorscheme6 (>= 6.10.0~), libkf6configcore6 (>= 6.10.0~), libkf6configgui6 (>= 6.10.0~), libkf6configqml6 (>= 6.10.0~), libkf6coreaddons6 (>= 6.10.0~), libkf6crash6 (>= 6.10.0~), libkf6globalaccel6 (>= 6.10.0~), libkf6i18n6 (>= 6.10.0~), libkf6i18nqml6 (>= 6.10.0~), libkf6notifications6 (>= 6.10.0~), libkf6package6 (>= 6.10.0~), libkf6service-bin, libkf6service6 (>= 6.10.0~), libkf6windowsystem6 (>= 6.10.0~), libkglobalacceld0 (>= 6.3.4~), libkscreenlocker6 (>= 6.3.4~), libkwaylandclient6 (>= 4:6.3.4~), liblcms2-2 (>= 2.4), libplasmaactivities6 (>= 6.3.4~), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libqt6gui6 (>= 6.7.2), libqt6opengl6 (>= 6.7.0~), libqt6qml6 (>= 6.7.0~), libqt6quick6 (>= 6.7.0~), libqt6sensors6 (>= 6.7.0~), libqt6svg6 (>= 6.7.0~), libqt6widgets6 (>= 6.7.0~), libstdc++6 (>= 13.1), libudev1 (>= 183), libwayland-client0 (>= 1.22~), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-cursor0 (>= 0.0.99), libxcb-damage0, libxcb-dri3-0 (>= 1.13), libxcb-glx0, libxcb-icccm4 (>= 0.4.2), libxcb-keysyms1 (>= 0.4.1), libxcb-present0, libxcb-randr0 (>= 1.12), libxcb-render0, libxcb-shape0, libxcb-shm0 (>= 1.10), libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.6), libxcvt0 (>= 0.1.0), libxkbcommon0 (>= 0.7.0), qt6-base-private-abi (= 6.8.2)
-Filename: pool/main/libkwin6_6.3.6-1+beluga1_amd64.deb
-Size: 2170828
-MD5sum: 48ef203fcd0edf48801e8d448b697c3f
-SHA1: 4ea8f16ed7f81d1f13fb5b1ce8af73aab32386fb
-SHA256: 5631d3276bab17da01bb18c3ad74b66a347610d919c36aec75393eb3e76b165b
-SHA512: 46ef040bcb4886aec3729826c15508276c4f3b09c3c11d2611c338d578d10fd545be2142b7975d990af4e44f1409fd5da0085293ab40e6e0ddb8c7a58242bb5b
+Filename: pool/main/libkwin6_6.3.6-1+beluga2_amd64.deb
+Size: 2172516
+MD5sum: 3dca376c40ae06dade3dc51c0bcc6033
+SHA1: 05ea824d0498950c703d63e3e2fc774052071e92
+SHA256: 27c217f1826d7c981edb8401d3088408bfbd842ccd65a86ca9688b11ce968e7f
+SHA512: fc54636fdfd51dd83446d545434d7c9e6596738fce569e7f897e971b54dc0204a9d3f1e13418846dc7d3d1c682c5c55dafbbe524dd7e54c81e56fd1f1ad3eff0
 Homepage: https://projects.kde.org/projects/kde/workspace/kwin
 Description: KDE window manager library
  KWin (pronounced as one syllable "kwin") is the window
